@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic-home-light" transform="translate(-1594 -81)">
+    <g id="house-black-silhouette-without-door" transform="translate(1596 78.11)">
+      <path id="Path_1588" data-name="Path 1588" d="M20.737,14.81a1,1,0,0,0-.082-1.433L11.269,5.165a1.17,1.17,0,0,0-1.526.018L.326,13.814a1,1,0,0,0-.045,1.431l.236.246A1.03,1.03,0,0,0,1.93,15.6l.7-.63V24.2a1.024,1.024,0,0,0,1.024,1.024H7.329A1.024,1.024,0,0,0,8.354,24.2V17.741h4.682V24.2A.968.968,0,0,0,14,25.22h3.89a1.024,1.024,0,0,0,1.023-1.02V15.1l.434.381c.239.21.742.042,1.123-.377Z" fill="#fff"/>
+    </g>
+    <rect id="Rectangle_352" data-name="Rectangle 352" width="24" height="24" transform="translate(1594 81)" fill="none"/>
+  </g>
+</svg>

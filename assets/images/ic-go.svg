@@ -1,0 +1,8 @@
+<svg id="ic-go" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <circle id="Ellipse_87" data-name="Ellipse 87" cx="17.5" cy="17.5" r="17.5" fill="#acacac"/>
+  <g id="right-arrow" transform="translate(8.075 10.114)">
+    <g id="Group_1064" data-name="Group 1064">
+      <path id="Path_4638" data-name="Path 4638" d="M18.142,48.3,11.484,41.64a1.012,1.012,0,0,0-1.427,0l-.6.6a1,1,0,0,0-.295.713,1.021,1.021,0,0,0,.295.722l3.884,3.893H1a.985.985,0,0,0-1,.992v.855a1.022,1.022,0,0,0,1,1.036H13.38L9.452,54.37a1,1,0,0,0,0,1.417l.6.6a1.012,1.012,0,0,0,1.427,0l6.658-6.658a1.018,1.018,0,0,0,0-1.432Z" transform="translate(0 -41.346)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

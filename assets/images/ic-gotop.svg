@@ -1,0 +1,13 @@
+<svg id="ic-gotop" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <circle id="Ellipse_71" data-name="Ellipse 71" cx="23" cy="23" r="23" fill="#666"/>
+  <g id="up-arrow" transform="translate(15 9)">
+    <g id="Group_931" data-name="Group 931" transform="translate(0 0)">
+      <g id="Group_930" data-name="Group 930" transform="translate(0 0)">
+        <path id="Path_1583" data-name="Path 1583" d="M81.205,7.848,73.386.193a.535.535,0,0,0-.823,0L64.743,7.848a.617.617,0,0,0,.412,1.07h3.7v9.918a.947.947,0,0,0,.823.782h6.585c.329,0,.412-.412.412-.782V8.918h4.115a.617.617,0,0,0,.412-1.07Z" transform="translate(-64.546 0)" fill="#fff"/>
+        <path id="Path_1584" data-name="Path 1584" d="M129.113,264.722h-6.585a.617.617,0,0,0,0,1.235h6.585a.617.617,0,1,0,0-1.235Z" transform="translate(-117.392 -243.869)" fill="#fff"/>
+        <path id="Path_1585" data-name="Path 1585" d="M129.113,296.069h-6.585a.617.617,0,0,0,0,1.235h6.585a.617.617,0,1,0,0-1.235Z" transform="translate(-117.392 -272.747)" fill="#fff"/>
+        <path id="Path_1586" data-name="Path 1586" d="M129.113,327.415h-6.585a.617.617,0,0,0,0,1.235h6.585a.617.617,0,1,0,0-1.235Z" transform="translate(-117.392 -301.624)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

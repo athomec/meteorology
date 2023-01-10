@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic-arrow-open" opacity="0.31">
+    <path id="Shape" d="M16,4A12,12,0,1,1,4,16,12,12,0,0,1,16,4Zm-1.293,6.293-1.414,1.414L17.585,16l-4.292,4.293,1.414,1.414L20.414,16Z" transform="translate(-4 -4)" fill="#666"/>
+  </g>
+</svg>

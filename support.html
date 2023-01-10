@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<title>交通部中央氣象局-資訊服務中心</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="交通部中央氣象局,資訊服務中心,氣象局,統籌管理">
+	<meta name="description" content="交通部中央氣象局資訊服務中心" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta property="og:site_name" content="image.png" />
+	<meta property="og:image" content="assets/images/fb-img.png" />
+	<!--FB分享設定-->
+
+	<link rel="icon" href="assets/images/favicon.png" type="image/ico" />
+	<!--iconfont設定-->
+	<link rel="stylesheet" href="assets/style/all.css">
+	<!--css設定-->
+</head>
+
+<body>
+	<!-- loading開始 -->
+	<div id="preloader">
+		<div id="status"><img src="./assets/images/loading.gif" /></div>
+	</div>
+
+	<!-- 登入視窗開始 -->
+	<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary-color">
+					<h5 class="modal-title white mx-auto d-flex align-items-center">
+						<img src="./assets/images/ic-lock.svg" alt="登入"> 登入
+					</h5>
+				</div>
+				<div class="modal-body pb-0 px-4 px-md-5">
+					<div class="mb-3">
+						<label for="account" class="form-label">帳號</label>
+						<input type="text" class="form-control" id="account" placeholder="請輸入帳號">
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">密碼</label>
+						<input type="text" class="form-control" id="password" placeholder="請輸入密碼">
+						<span class="notice danger-dark-color d-flex mt-1">
+							<img src="./assets/images/ic-warning.svg" alt="錯誤" class="me-1"> 請輸入正確密碼
+						</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								記住帳號
+							</label>
+						</div>
+						<a href="account.html" class="link-primary-light-color d-flex align-items-center mb-3">
+							<img src="./assets/images/ic-help.svg" alt="忘記密碼" class="me-1"> 忘記密碼
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer border-0 pt-2 justify-content-center">
+					<button type="button" class="btn btn-dark-gray px-4 px-sm-5 py-1" data-bs-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-dark-danger-color px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">登入</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 登入視窗結束 -->
+	<div class="wrapper">
+		<header class="header">
+			<a href="index.html" class="header-logo"><img src="./assets/images/logo.svg" alt="交通部中央氣象局 logo"></a>
+			<h1 class="header-title"><img src="./assets/images/main-title.svg" alt="統籌管理-服務中心"></h1>
+			<img src="./assets/images/header-vision.svg" class="header-vision">
+			<div class="header-link">
+				<a href="index.html" class="header-link-item font-bold me-3 d-none d-sm-flex">
+					<img src="./assets/images/ic-home.svg" alt="回首頁" class="header-link-img me-1"> 首頁
+				</a>
+				<a href="https://athomec.github.io/meteorology-backstage/login.html" target="_blank" class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-manage.svg" alt="網站導覽" class="header-link-img me-1"> 管理
+				</a>
+				<a href="sitemap.html" class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-sitemap.svg" alt="網站導覽" class="header-link-img me-1"> 導覽
+				</a>
+				<a href="#" class="header-link-item d-flex font-bold" data-bs-toggle="modal" data-bs-target="#login">
+					<img src="./assets/images/ic-member.svg" alt="登入" class="header-link-img me-1"> 登入
+				</a>
+			</div>
+		</header>
+		<nav class="navbar navbar-expand-lg py-lg-0">
+			<div class="container-fluid">
+				<button class="navbar-toggler collapsed px-1 px-sm-3" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<img src="./assets/images/ic-menu.svg" alt="選單">
+				</button>
+				<div class="navbar-collapse collapse justify-content-center" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="support.html" class="nav-link">
+								<p>線上報修</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="apply.html" class="nav-link">
+								<p>表單申請</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="account.html" class="nav-link">
+								<p>帳密開通</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="asset.html" class="nav-link">
+								<p>資產管理</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="hardware.html" class="nav-link">
+								<p>硬體健康</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="monitor.html" class="nav-link">
+								<p>效能監看</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="share.html" class="nav-link">
+								<p>共享資源</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="qa.html" class="nav-link">
+								<p>常見問題</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="feedback.html" class="nav-link">
+								<p>意見回饋</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="marquee bg-secondary-light-color" data-con="page">
+			<div class="container d-flex py-2">
+				<img src="./assets/images/ic-speaker.svg" alt="跑馬燈" class="me-2">
+				<marquee direction="right">
+					「中央氣象局天氣預報」每日有4次主要發布時間，分別在台灣時間清晨5時0分左右、上午11時0分左右、下午5時0分左右、及晚上11時0分左右。</marquee>
+			</div>
+		</div>
+
+		<div class="content">
+			<h2 class="title">
+    <div class="title-con"><img src="./assets/images/menu-ic1.svg" alt="線上報修icon"> 線上報修</div>
+</h2>
+<div class="container px-0">
+    <div class="row justify-content-center support-form mb-4">
+        <div class="col-xl-10 col-xxl-8">
+            <ul class="row nav nav-tabs icon-toggle-menu js-toggle-menu mb-4">
+                <li class="col-6">
+                    <a href="#" class="icon-toggle-menu-item active js-toggle-btn" data-bs-toggle="collapse"
+                        data-bs-target="#support">
+                        <img src="./assets/images/ic-support.svg" alt="報修申請">
+                        報修申請
+                    </a>
+                </li>
+                <li class="col-6">
+                    <a href="#" class="icon-toggle-menu-item js-toggle-btn" data-bs-toggle="collapse"
+                        data-bs-target="#check">
+                        <img src="./assets/images/ic-check.svg" alt="進度查詢">
+                        進度查詢
+                    </a>
+                </li>
+            </ul>
+            <div class="accordion-collapse collapse show" id="support" data-bs-parent=".support-form">
+                <div class="bg-gray-xxxlight p-4 rounded-lg mb-4">
+                    <p class="mb-2 ms-2">
+                        員工編號：354354 <br>
+                        中文姓名：王大明<br>
+                        所屬單位：資訊中心 / 系統課
+                    </p>
+                    <a href="#" class="link-tertiary-color d-flex ms-2"><img src="./assets/images/ic-edit.svg"
+                            alt="申請更改icon" class="me-1"> 申請更改</a>
+                </div>
+                <div class="row gx-3">
+                    <div class="col-md-7 mb-3">
+                        <div class="row gx-3">
+                            <div class="col-6">
+                                <label for="support-device" class="form-label">請選擇設備種類</label>
+                                <select class="form-select" id="support-device">
+                                    <option selected>伺服器</option>
+                                    <option value="儲存設備">儲存設備</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="support-brand" class="form-label">請選擇品牌</label>
+                                <select class="form-select" id="support-brand">
+                                    <option selected>HPe</option>
+                                    <option value="Dell & EMC">Dell & EMC</option>
+                                    <option value="Lenovo">Lenovo</option>
+                                    <option value="Syglonogy">Syglonogy</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="d-flex gx-3 align-items-end justify-content-between">
+                            <div style="width: calc(100% - 108px);">
+                                <label for="apply-mail" class="form-label">請填入設備序號</label>
+                                <input type="email" class="form-control w-10" id="apply-mail" placeholder="請填入設備序號">
+                            </div>
+                            <button style="width: 93px;" type="submit" class="btn btn-dark-gray"
+                                data-bs-toggle="collapse" data-bs-target="#result">
+                                搜尋<img src="./assets/images/ic-search.svg" alt="搜尋" class="ms-1 ms-md-2">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="accordion-collapse collapse border-start border-4 bd-tertiary-color ps-4 mb-4"
+                            id="result">
+                            <p class="mb-2"><span class="tertiary-color font-bold">查詢結果：</span>伺服器 / HPeDL380 Gen7 /
+                                aa1234 / 第一機房 / E04櫃 / 37U-38U</p>
+                            <a href="#" class="link-tertiary-color d-flex">
+                                <img src="./assets/images/ic-edit.svg" alt="申請更改icon" class="me-1">
+                                申請更改
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="new-number" class="form-label">狀況說明</label>
+                    <textarea type="text" class="form-control" id="new-number" rows="3"
+                        placeholder="請輸入狀況說明"></textarea>
+                </div>
+                <label for="formFile" class="form-label">上傳附件</label>
+                <div class="input-group mb-1">
+                    <input type="file" class="form-control" id="formFile" aria-describedby="inputGroupFileAddon04"
+                        aria-label="Upload">
+                    <button class="btn btn-dark-primary-light-color" type="button"
+                        id="inputGroupFileAddon04">上傳檔案</button>
+                </div>
+                <p class="danger-dark-color">已上傳 3 個附件</p>
+                <ul class="font-xs mb-3 primary-light-color">
+                    <li>1.20221220-info.doc</li>
+                    <li>2.流程執行記錄.xlsx</li>
+                    <li>3.EIP修改密碼.pdf</li>
+                </ul>
+                <div class="mb-3">
+                    <label for="account-number" class="form-label">備註說明</label>
+                    <input type="text" class="form-control" id="account-number" placeholder="請輸入備註說明">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-xl-5 col-xxl-4">
+                        <button class="btn btn-dark-gray w-100" data-bs-toggle="modal"
+                            data-bs-target="#message">送出申請</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-collapse collapse" id="check" data-bs-parent=".support-form">
+                <div class="case-search-form">
+                        <div class="tab-group me-auto me-lg-3 mb-3">
+                            <input type="radio" name="time" value="3" id="time-1" checked="">
+                            <label for="time-1">
+                                一天
+                            </label>
+                            <input type="radio" name="time" value="4" id="time-2">
+                            <label for="time-2">
+                                一週
+                            </label>
+                            <input type="radio" name="time" value="5" id="time-3">
+                            <label for="time-3">
+                                一個月
+                            </label>
+                        </div>
+                    <div class="case-search-form-date d-flex mb-3">
+                        <div class="form-group">
+                            <label for="date-start" class="form-label">自訂區間</label>
+                            <div class="input-group date" id="date-start" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input border-end-0"
+                                    data-target="#date-start">
+                                <div class="input-group-append" data-target="#date-start" data-toggle="datetimepicker">
+                                    <div class="input-group-text">
+                                        <img src="./assets/images/ic-calendar.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2 date-to">~</div>
+                        <div class="form-group me-sm-3 mb-3 mb-sm-0">
+                            <div class="input-group date" id="date-end" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input border-end-0"
+                                    data-target="#date-end">
+                                <div class="input-group-append" data-target="#date-end" data-toggle="datetimepicker">
+                                    <div class="input-group-text">
+                                        <img src="./assets/images/ic-calendar.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark-gray form-box-btn">
+                            <p>查詢</p><img src="./assets/images/ic-search.svg" alt="查詢" class="ms-1 ms-md-2">
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="bg-gray-xxxlight p-3 p-sm-4 rounded-lg d-flex justify-content-center mb-3">
+                    <div class="tab-menu">
+                        <input type="radio" name="case" id="case-1" checked="">
+                        <label for="case-1">
+                            所有案件
+                        </label>
+                        <input type="radio" name="case" id="case-2">
+                        <label for="case-2">
+                            尚未派工
+                        </label>
+                        <input type="radio" name="case" id="case-3">
+                        <label for="case-3">
+                            處理中
+                        </label>
+                        <input type="radio" name="case" id="case-4">
+                        <label for="case-4">
+                            已結案
+                        </label>
+                    </div>
+                </div>
+                <ul class="case-search mb-3">
+                    <li>
+                        <a href="#" class="case-search-item mb-3">
+                            <div class="case-search-header">
+                                <div class="case-search-status bg-danger-color">尚未派工</div>
+                                <div class="d-flex justify-content-between w-100 px-3 align-items-center">
+                                    <p>申請日期：2022/11/20</p>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/ic-user.svg" class="me-2"> 承辦窗口：姚宏易
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-search-body p-3 pb-2">
+                                <ul class="case-search-info">
+                                    <li class="case-search-info-item"><span>種類</span>儲存設備</li>
+                                    <li class="case-search-info-item"><span>品牌</span>Synology</li>
+                                    <li class="case-search-info-item"><span>型號</span>RS3614RPxs</li>
+                                    <li class="case-search-info-item"><span>序號</span>2157336</li>
+                                    <li class="case-search-info-item"><span>處理時間</span>3day:15hr:24min</li>
+                                </ul>
+                                <img src="./assets/images/ic-go.svg" class="case-search-action">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="case-search-item mb-3">
+                            <div class="case-search-header">
+                                <div class="case-search-status bg-secondary-light-color">處理中</div>
+                                <div class="d-flex justify-content-between w-100 px-3 align-items-center">
+                                    <p>申請日期：2022/11/20</p>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/ic-user.svg" class="me-2"> 承辦窗口：姚宏易
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-search-body p-3 pb-2">
+                                <ul class="case-search-info">
+                                    <li class="case-search-info-item"><span>種類</span>儲存設備</li>
+                                    <li class="case-search-info-item"><span>品牌</span>Synology</li>
+                                    <li class="case-search-info-item"><span>型號</span>RS3614RPxs</li>
+                                    <li class="case-search-info-item"><span>序號</span>2157336</li>
+                                    <li class="case-search-info-item"><span>處理時間</span>3day:15hr:24min</li>
+                                </ul>
+                                <img src="./assets/images/ic-go.svg" class="case-search-action">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="case-search-item mb-3">
+                            <div class="case-search-header">
+                                <div class="case-search-status bg-danger-color">尚未派工</div>
+                                <div class="d-flex justify-content-between w-100 px-3 align-items-center">
+                                    <p>申請日期：2022/11/20</p>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/ic-user.svg" class="me-2"> 承辦窗口：姚宏易
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-search-body p-3 pb-2">
+                                <ul class="case-search-info">
+                                    <li class="case-search-info-item"><span>種類</span>儲存設備</li>
+                                    <li class="case-search-info-item"><span>品牌</span>Synology</li>
+                                    <li class="case-search-info-item"><span>型號</span>RS3614RPxs</li>
+                                    <li class="case-search-info-item"><span>序號</span>2157336</li>
+                                    <li class="case-search-info-item"><span>處理時間</span>3day:15hr:24min</li>
+                                </ul>
+                                <img src="./assets/images/ic-go.svg" class="case-search-action">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="case-search-item mb-3">
+                            <div class="case-search-header">
+                                <div class="case-search-status bg-secondary-light-color">處理中</div>
+                                <div class="d-flex justify-content-between w-100 px-3 align-items-center">
+                                    <p>申請日期：2022/11/20</p>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/ic-user.svg" class="me-2"> 承辦窗口：姚宏易
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-search-body p-3 pb-2">
+                                <ul class="case-search-info">
+                                    <li class="case-search-info-item"><span>種類</span>儲存設備</li>
+                                    <li class="case-search-info-item"><span>品牌</span>Synology</li>
+                                    <li class="case-search-info-item"><span>型號</span>RS3614RPxs</li>
+                                    <li class="case-search-info-item"><span>序號</span>2157336</li>
+                                    <li class="case-search-info-item"><span>處理時間</span>3day:15hr:24min</li>
+                                </ul>
+                                <img src="./assets/images/ic-go.svg" class="case-search-action">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="case-search-item mb-3">
+                            <div class="case-search-header">
+                                <div class="case-search-status bg-base-color">已結案</div>
+                                <div class="d-flex justify-content-between w-100 px-3 align-items-center">
+                                    <p>申請日期：2022/11/20</p>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/ic-user.svg" class="me-2"> 承辦窗口：姚宏易
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-search-body p-3 pb-2">
+                                <ul class="case-search-info">
+                                    <li class="case-search-info-item"><span>種類</span>儲存設備</li>
+                                    <li class="case-search-info-item"><span>品牌</span>Synology</li>
+                                    <li class="case-search-info-item"><span>型號</span>RS3614RPxs</li>
+                                    <li class="case-search-info-item"><span>序號</span>2157336</li>
+                                    <li class="case-search-info-item"><span>處理時間</span>3day:15hr:24min</li>
+                                </ul>
+                                <img src="./assets/images/ic-go.svg" class="case-search-action">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="case-search-item mb-3">
+                            <div class="case-search-header">
+                                <div class="case-search-status bg-base-color">已結案</div>
+                                <div class="d-flex justify-content-between w-100 px-3 align-items-center">
+                                    <p>申請日期：2022/11/20</p>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/ic-user.svg" class="me-2"> 承辦窗口：姚宏易
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-search-body p-3 pb-2">
+                                <ul class="case-search-info">
+                                    <li class="case-search-info-item"><span>種類</span>儲存設備</li>
+                                    <li class="case-search-info-item"><span>品牌</span>Synology</li>
+                                    <li class="case-search-info-item"><span>型號</span>RS3614RPxs</li>
+                                    <li class="case-search-info-item"><span>序號</span>2157336</li>
+                                    <li class="case-search-info-item"><span>處理時間</span>3day:15hr:24min</li>
+                                </ul>
+                                <img src="./assets/images/ic-go.svg" class="case-search-action">
+                            </div>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#" class="case-search-item mb-3">
+                            <div class="case-search-header">
+                                <div class="case-search-status bg-base-color">已結案</div>
+                                <div class="d-flex justify-content-between w-100 px-3 align-items-center">
+                                    <p>申請日期：2022/11/20</p>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/ic-user.svg" class="me-2"> 承辦窗口：姚宏易
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-search-body p-3 pb-2">
+                                <ul class="case-search-info">
+                                    <li class="case-search-info-item"><span>種類</span>儲存設備</li>
+                                    <li class="case-search-info-item"><span>品牌</span>Synology</li>
+                                    <li class="case-search-info-item"><span>型號</span>RS3614RPxs</li>
+                                    <li class="case-search-info-item"><span>序號</span>2157336</li>
+                                    <li class="case-search-info-item"><span>處理時間</span>3day:15hr:24min</li>
+                                </ul>
+                                <img src="./assets/images/ic-go.svg" class="case-search-action">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="case-search-item mb-3">
+                            <div class="case-search-header">
+                                <div class="case-search-status bg-base-color">已結案</div>
+                                <div class="d-flex justify-content-between w-100 px-3 align-items-center">
+                                    <p>申請日期：2022/11/20</p>
+                                    <div class="d-flex">
+                                        <img src="./assets/images/ic-user.svg" class="me-2"> 承辦窗口：姚宏易
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-search-body p-3 pb-2">
+                                <ul class="case-search-info">
+                                    <li class="case-search-info-item"><span>種類</span>儲存設備</li>
+                                    <li class="case-search-info-item"><span>品牌</span>Synology</li>
+                                    <li class="case-search-info-item"><span>型號</span>RS3614RPxs</li>
+                                    <li class="case-search-info-item"><span>序號</span>2157336</li>
+                                    <li class="case-search-info-item"><span>處理時間</span>3day:15hr:24min</li>
+                                </ul>
+                                <img src="./assets/images/ic-go.svg" class="case-search-action">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <nav class="d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item page-item-switch">
+                            <a class="page-link" href="#"><img src="./assets/images/ic-backward.svg" alt="上一頁"></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item page-item-switch">
+                            <a class="page-link" href="#"><img src="./assets/images/ic-forward.svg" alt="下一頁"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <a href="index.html" class="content-bottom-btn">
+        <img src="./assets/images/ic-back.svg" alt="回首頁" class="me-1">
+        回首頁
+    </a>
+</div>
+		</div>
+		<footer class="white bg-gray-light text-center py-3">
+			<a href="#" class="gotop"><img src="./assets/images/ic-gotop.svg" alt="gotop"></a>
+			Copyright © 2022 中華民國交通部中央氣象局. All rights reserved.
+		</footer>
+		<!-- SCRIPTS -->
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.js"></script>
+		<script src="assets/js/moment-with-locales.min.js"></script>
+		<script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script type="text/javascript">
+			$(function () {
+					$('#date-start').datetimepicker({
+						format: 'L',
+						locale: 'zh-tw',
+						defaultDate: new Date(),
+					});
+					$('#date-end').datetimepicker({
+						format: 'L',
+						locale: 'zh-tw',
+						defaultDate: new Date(),
+					});
+				});
+		</script>
+	</div>
+</body>
+
+</html>

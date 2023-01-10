@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<title>交通部中央氣象局-資訊服務中心</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="交通部中央氣象局,資訊服務中心,氣象局,統籌管理">
+	<meta name="description" content="交通部中央氣象局資訊服務中心" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta property="og:site_name" content="交通部中央氣象局-資訊服務中心" />
+	<meta property="og:image" content="assets/images/fb-img.png" />
+	<!--FB分享設定-->
+
+	<link rel="icon" href="assets/images/favicon.png" type="image/ico" />
+	<!--iconfont設定-->
+	<link rel="stylesheet" href="assets/style/all.css">
+	<!--css設定-->
+</head>
+
+<body>
+	<!-- loading開始 -->
+	<div id="preloader">
+		<div id="status"><img src="./assets/images/loading.gif" /></div>
+	</div>
+	<div class="wrapper" data-con="index">
+		<!-- 登入視窗開始 -->
+		<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header bg-primary-color">
+						<h5 class="modal-title white mx-auto d-flex align-items-center">
+							<img src="./assets/images/ic-lock.svg" alt="登入"> 登入
+						</h5>
+					</div>
+					<div class="modal-body pb-0 px-4 px-md-5">
+						<div class="mb-3">
+							<label for="account" class="form-label">帳號</label>
+							<input type="text" class="form-control" id="account" placeholder="請輸入帳號">
+						</div>
+						<div class="mb-3">
+							<label for="password" class="form-label">密碼</label>
+							<input type="text" class="form-control" id="password" placeholder="請輸入密碼">
+							<span class="notice danger-dark-color d-flex mt-1">
+								<img src="./assets/images/ic-warning.svg" alt="錯誤" class="me-1"> 請輸入正確密碼
+							</span>
+						</div>
+						<div class="d-flex justify-content-between">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									記住帳號
+								</label>
+							</div>
+							<a href="account.html" class="link-primary-light-color d-flex align-items-center mb-3">
+								<img src="./assets/images/ic-help.svg" alt="忘記密碼" class="me-1"> 忘記密碼
+							</a>
+						</div>
+					</div>
+					<div class="modal-footer border-0 pt-2 justify-content-center">
+						<button type="button" class="btn btn-dark-gray px-4 px-sm-5 py-1"
+							data-bs-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-dark-danger-color px-4 px-sm-5 py-1"
+							data-bs-dismiss="modal">登入</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 登入視窗結束 -->
+		<div class="main">
+			<div class="main-vision">
+				<img src="./assets/images/logo.svg" alt="交通部中央氣象局" class="main-logo mb-xl-4 mb-xxl-5" />
+				<h1 class="main-title">統籌管理-服務中心</h1>
+				<div class="main-vision-img"></div>
+			</div>
+			<div class="main-menu">
+				<div class="main-top">
+					<a href="https://athomec.github.io/meteorology-backstage/login.html" target="_blank" class="main-top-link link-primary-color d-flex font-bold me-3">
+						<img src="./assets/images/ic-manage.svg" alt="網站導覽" class="me-1 me-sm-2"> 管理
+					</a>
+					<a href="sitemap.html" class="main-top-link link-primary-color d-flex font-bold me-3">
+						<img src="./assets/images/ic-sitemap.svg" alt="網站導覽" class="me-1 me-sm-2"> 導覽
+					</a>
+					<a href="#" class="main-top-link link-primary-color d-flex font-bold" data-bs-toggle="modal"
+						data-bs-target="#login">
+						<img src="./assets/images/ic-member.svg" alt="登入" class="me-1 me-sm-2"> 登入
+					</a>
+				</div>
+				<ul class="main-menu-item" data-con="start">
+					<li class="main-menu-img" data-con="search"><img src="./assets/images/main-man1.svg" alt="主視覺圖">
+					</li>
+					<li>
+						<a href="support.html" class="btn-dark-special-color main-menu-link">
+							<img src="./assets/images/menu-ic1.svg" alt="線上報修" class="mb-1">
+							<p>線上報修</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn-dark-secondary-color main-menu-link">
+							<img src="./assets/images/menu-ic2.svg" alt="表單申請" class="mb-1">
+							<p>表單申請</p>
+						</a>
+					</li>
+					<li>
+						<a href="account.html" class="btn-dark-danger-color main-menu-link">
+							<img src="./assets/images/menu-ic3.svg" alt="帳密開通" class="mb-1">
+							<p>帳密開通</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="main-menu-item" data-con="middle">
+					<li class="main-menu-img" data-con="check"><img src="./assets/images/main-man2.svg" alt="主視覺圖"></li>
+					<li>
+						<a href="#" class="btn-dark-assist-color main-menu-link">
+							<img src="./assets/images/menu-ic4.svg" alt="資產管理" class="mb-1">
+							<p>資產管理</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn-dark-base-color main-menu-link">
+							<img src="./assets/images/menu-ic5.svg" alt="硬體健康" class="mb-1">
+							<p>硬體健康</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn-dark-bright-color main-menu-link">
+							<img src="./assets/images/menu-ic6.svg" alt="效能監看" class="mb-1">
+							<p>效能監看</p>
+						</a>
+					</li>
+				</ul>
+				<ul class="main-menu-item" data-con="middle">
+					<li class="main-menu-img" data-con="speak"><img src="./assets/images/main-man3.svg" alt="主視覺圖"></li>
+					<li>
+						<a href="share.html" class="btn-dark-stable-light-color main-menu-link">
+							<img src="./assets/images/menu-ic7.svg" alt="共享資源" class="mb-1">
+							<p>共享資源</p>
+						</a>
+					</li>
+					<li class="me-auto">
+						<a href="qa.html" class="btn-dark-primary-light-color main-menu-link">
+							<img src="./assets/images/menu-ic8.svg" alt="常見問題" class="mb-1">
+							<p>常見問題</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="btn-dark-assist-dark-color main-menu-link">
+							<img src="./assets/images/menu-ic9.svg" alt="意見回饋" class="mb-1">
+							<p>意見回饋</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="marquee mb-3 mb-xl-0">
+			<img src="./assets/images/ic-speaker.svg" alt="跑馬燈" class="me-2">
+			<marquee direction="right">
+				「中央氣象局天氣預報」每日有4次主要發布時間，分別在台灣時間清晨5時0分左右、上午11時0分左右、下午5時0分左右、及晚上11時0分左右。</marquee>
+		</div>
+	</div>
+	<footer class="white bg-gray-light text-center py-3">
+		Copyright © 2022 中華民國交通部中央氣象局. All rights reserved.
+	</footer>
+	<!-- SCRIPTS -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.js"></script>
+	<script src="assets/js/script.js"></script>
+	</div>
+</body>
+
+</html>
