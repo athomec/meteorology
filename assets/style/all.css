@@ -16236,6 +16236,10 @@ footer {
       .account-form .btn img, .password-form .btn img, .support-form .btn img {
         width: 16px; } }
 
+@media (max-width: 576px) {
+  .support-form-wrapper {
+    width: 100% !important; } }
+
 .password-form .toggle-menu {
   border-color: #61A7BE; }
 

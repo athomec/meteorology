@@ -188,42 +188,44 @@
                     <a href="#" class="link-tertiary-color d-flex ms-2"><img src="./assets/images/ic-edit.svg"
                             alt="申請更改icon" class="me-1"> 申請更改</a>
                 </div>
-                <div class="row gx-3">
-                    <div class="col-md-7 mb-3">
+                <div class="d-flex mb-3 align-items-end flex-wrap">
+                    <div style="width:calc(100% - 120px);" class="support-form-wrapper me-sm-3">
                         <div class="row gx-3">
-                            <div class="col-6">
+                            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                                 <label for="support-device" class="form-label">請選擇設備種類</label>
                                 <select class="form-select" id="support-device">
-                                    <option selected>伺服器</option>
+                                    <option selected>請選擇</option>
+                                    <option value="伺服器">伺服器</option>
                                     <option value="儲存設備">儲存設備</option>
                                 </select>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                                 <label for="support-brand" class="form-label">請選擇品牌</label>
                                 <select class="form-select" id="support-brand">
-                                    <option selected>HPe</option>
+                                    <option selected>請選擇</option>
+                                    <option value="HPe">HPe</option>
                                     <option value="Dell & EMC">Dell & EMC</option>
                                     <option value="Lenovo">Lenovo</option>
                                     <option value="Syglonogy">Syglonogy</option>
                                 </select>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 mb-3">
-                        <div class="d-flex gx-3 align-items-end justify-content-between">
-                            <div style="width: calc(100% - 108px);">
-                                <label for="apply-mail" class="form-label">請填入設備序號</label>
-                                <input type="email" class="form-control w-10" id="apply-mail" placeholder="請填入設備序號">
+                            <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                    <label for="apply-ip" class="form-label"><span class="danger-dark-color">*</span> 請填寫設備IP</label>
+                                    <input type="email" class="form-control w-10" id="apply-ip" placeholder="請填寫設備IP">
                             </div>
-                            <button style="width: 93px;" type="submit" class="btn btn-dark-gray"
-                                data-bs-toggle="collapse" data-bs-target="#result">
-                                搜尋<img src="./assets/images/ic-search.svg" alt="搜尋" class="ms-1 ms-md-2">
-                            </button>
+                            <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                                    <label for="apply-number" class="form-label"><span class="danger-dark-color">*</span>請填入設備序號</label>
+                                    <input type="email" class="form-control w-10" id="apply-number" placeholder="請填入設備序號">
+                            </div>
                         </div>
                     </div>
+                    <button style="width:104px" type="submit" class="btn btn-dark-gray" data-bs-toggle="collapse" data-bs-target="#result">
+                        搜尋<img src="./assets/images/ic-search.svg" alt="搜尋" class="ms-1 ms-md-2">
+                    </button>
+                </div>
+                <div class="row">
                     <div class="col-12">
-                        <div class="accordion-collapse collapse border-start border-4 bd-tertiary-color ps-4 mb-4"
-                            id="result">
+                        <div class="accordion-collapse collapse border-start border-4 bd-tertiary-color ps-4 mb-4" id="result">
                             <p class="mb-2"><span class="tertiary-color font-bold">查詢結果：</span>伺服器 / HPeDL380 Gen7 /
                                 aa1234 / 第一機房 / E04櫃 / 37U-38U</p>
                             <a href="#" class="link-tertiary-color d-flex">
