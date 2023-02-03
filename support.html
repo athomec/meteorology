@@ -210,12 +210,15 @@
                                 </select>
                             </div>
                             <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
-                                    <label for="apply-ip" class="form-label"><span class="danger-dark-color">*</span> 請填寫設備IP</label>
-                                    <input type="email" class="form-control w-10" id="apply-ip" placeholder="請填寫設備IP">
+                                    <label for="apply-info" class="form-label"><span class="danger-dark-color">*</span> 請填寫設備資訊</label>
+                                    <select class="form-select js-support-info" id="apply-info">
+                                        <option value="設備 IP">設備 IP</option>
+                                        <option value="設備序號">設備序號</option>
+                                    </select>
                             </div>
-                            <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
-                                    <label for="apply-number" class="form-label"><span class="danger-dark-color">*</span>請填入設備序號</label>
-                                    <input type="email" class="form-control w-10" id="apply-number" placeholder="請填入設備序號">
+                            <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0 d-flex align-items-end">
+                                    <label for="apply-number" class="form-label visually-hidden js-support-label"><span class="danger-dark-color">*</span>請填入</label>
+                                    <input type="text" class="form-control w-10 js-support-number" id="apply-number" placeholder="請填入設備 IP">
                             </div>
                         </div>
                     </div>

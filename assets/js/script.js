@@ -54,6 +54,13 @@ $(function () {//JS開頭
 		$(this).addClass('active');
 
 	});
+//---------------------線上報修搜尋設定------------------------
+	const supportInfo = document.querySelector(".js-support-info");
+	const supportNumber = document.querySelector(".js-support-number");
+	supportInfo.addEventListener("click", function (e) {
+		let str = e.target.value+""
+		supportNumber.setAttribute("placeholder", "請填入"+str);
+	})
 
 	//手風琴按鈕設定
 	
