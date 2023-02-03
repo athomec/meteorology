@@ -55,14 +55,9 @@ $(function () {
 
   var supportInfo = document.querySelector(".js-support-info");
   var supportNumber = document.querySelector(".js-support-number");
-  supportInfo.addEventListener("click", function (e) {
-    var str = e.target.value + ""; //supportNumber.setAttribute("placeholder", "請填入"+str);
-
-    if (e.target.value == "設備 IP") {
-      supportNumber.setAttribute("placeholder", "請填入設備 IP");
-    } else if (e.target.value == "設備序號") {
-      supportNumber.setAttribute("placeholder", "請填入設備序號");
-    }
+  supportInfo.addEventListener("change", function (e) {
+    var str = e.target.value + "";
+    supportNumber.setAttribute("placeholder", "請填入" + str);
   }); //手風琴按鈕設定
 
   /*$('.js-accordion-btn').on('click', function (e) {
