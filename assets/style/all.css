@@ -16224,6 +16224,9 @@ footer {
         margin-bottom: 5px; } }
   .account-form .form-control, .account-form .form-select, .password-form .form-control, .password-form .form-select, .support-form .form-control, .support-form .form-select {
     border: 1px solid #DBDBDB; }
+  .account-form .form-control[readonly], .password-form .form-control[readonly], .support-form .form-control[readonly] {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #DBDBDB; }
   .account-form .btn, .password-form .btn, .support-form .btn {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -16235,6 +16238,8 @@ footer {
     @media (max-width: 1200px) {
       .account-form .btn img, .password-form .btn img, .support-form .btn img {
         width: 16px; } }
+  .account-form .input-group-append .btn, .password-form .input-group-append .btn, .support-form .input-group-append .btn {
+    border-radius: 0 4px 4px 0; }
 
 @media (max-width: 576px) {
   .support-form-wrapper {
