@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="ic-forbidden" transform="translate(-3014 -5378)">
+    <circle id="Ellipse_96" data-name="Ellipse 96" cx="7.5" cy="7.5" r="7.5" transform="translate(3018 5382)" fill="#fff"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(3013 5377)">
+      <path id="Path_5667" data-name="Path 5667" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm4.242,13.829a1,1,0,1,1-1.414,1.414L12,13.414,9.172,16.243a1,1,0,1,1-1.414-1.414L10.586,12,7.758,9.171A1,1,0,1,1,9.172,7.757L12,10.586l2.828-2.829a1,1,0,1,1,1.414,1.414L13.414,12Z" fill="#e14242"/>
+    </g>
+  </g>
+</svg>
