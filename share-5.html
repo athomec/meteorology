@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<title>交通部中央氣象局-資訊服務中心</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="交通部中央氣象局,資訊服務中心,氣象局,統籌管理">
+	<meta name="description" content="交通部中央氣象局資訊服務中心" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta property="og:site_name" content="image.png" />
+	<meta property="og:image" content="assets/images/fb-img.png" />
+	<!--FB分享設定-->
+
+	<link rel="icon" href="assets/images/favicon.png" type="image/ico" />
+	<!--iconfont設定-->
+	<link rel="stylesheet" href="assets/style/all.css">
+	<!--css設定-->
+</head>
+
+<body>
+	<!-- loading開始 -->
+	<div id="preloader">
+		<div id="status"><img src="./assets/images/loading.gif" /></div>
+	</div>
+
+	<!-- 登入視窗開始 -->
+	<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary-color">
+					<h5 class="modal-title white mx-auto d-flex align-items-center">
+						<img src="./assets/images/ic-lock.svg" alt="登入"> 登入
+					</h5>
+				</div>
+				<div class="modal-body pb-0 px-4 px-md-5">
+					<div class="mb-3">
+						<label for="account" class="form-label">帳號</label>
+						<input type="text" class="form-control" id="account" placeholder="請輸入帳號">
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">密碼</label>
+						<input type="text" class="form-control" id="password" placeholder="請輸入密碼">
+						<span class="notice danger-dark-color d-flex mt-1">
+							<img src="./assets/images/ic-warning.svg" alt="錯誤" class="me-1"> 請輸入正確密碼
+						</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								記住帳號
+							</label>
+						</div>
+						<a href="account.html" class="link-primary-light-color d-flex align-items-center mb-3">
+							<img src="./assets/images/ic-help.svg" alt="忘記密碼" class="me-1"> 忘記密碼
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer border-0 pt-2 justify-content-center">
+					<button type="button" class="btn btn-dark-gray px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-dark-danger-color px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">登入</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 登入視窗結束 -->
+	<div class="wrapper">
+		<header class="header">
+			<a href="index.html" class="header-logo"><img src="./assets/images/logo.svg" alt="交通部中央氣象局 logo"></a>
+			<h1 class="header-title"><img src="./assets/images/main-title.svg" alt="統籌管理-服務中心"></h1>
+			<img src="./assets/images/header-vision.svg" class="header-vision">
+			<div class="header-link">
+				<a href="index.html" class="header-link-item font-bold me-3 d-none d-sm-flex">
+					<img src="./assets/images/ic-home.svg" alt="回首頁" class="header-link-img me-1"> 首頁
+				</a>
+				<a href="https://athomec.github.io/meteorology-backstage/login.html" target="_blank"
+					class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-manage.svg" alt="網站導覽" class="header-link-img me-1"> 管理
+				</a>
+				<a href="sitemap.html" class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-sitemap.svg" alt="網站導覽" class="header-link-img me-1"> 導覽
+				</a>
+				<a href="#" class="header-link-item d-flex font-bold" data-bs-toggle="modal" data-bs-target="#login">
+					<img src="./assets/images/ic-member.svg" alt="登入" class="header-link-img me-1"> 登入
+				</a>
+			</div>
+		</header>
+		<nav class="navbar navbar-expand-lg py-lg-0">
+			<div class="container-fluid">
+				<button class="navbar-toggler collapsed px-1 px-sm-3" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<img src="./assets/images/ic-menu.svg" alt="選單">
+				</button>
+				<div class="navbar-collapse collapse justify-content-center" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="support.html" class="nav-link">
+								<p>線上報修</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="apply.html" class="nav-link">
+								<p>表單申請</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="account.html" class="nav-link">
+								<p>帳密開通</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="assets.html" class="nav-link">
+								<p>資產管理</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="hardware.html" class="nav-link">
+								<p>硬體健康</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="monitor.html" class="nav-link">
+								<p>效能監看</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="share.html" class="nav-link">
+								<p>共享資源</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="qa.html" class="nav-link">
+								<p>常見問題</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="feedback.html" class="nav-link">
+								<p>意見回饋</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="marquee bg-secondary-light-color" data-con="page">
+			<div class="container d-flex py-2">
+				<img src="./assets/images/ic-speaker.svg" alt="跑馬燈" class="me-2">
+				<marquee direction="right">
+					「中央氣象局天氣預報」每日有4次主要發布時間，分別在台灣時間清晨5時0分左右、上午11時0分左右、下午5時0分左右、及晚上11時0分左右。</marquee>
+			</div>
+		</div>
+
+		<div class="content">
+			
+<h2 class="title">
+    <div class="title-con"><img src="./assets/images/menu-ic7.svg" alt="共享資源icon"> 共享資源</div>
+</h2>
+<div class="container">
+    <div class="row form-box bg-pale-color mb-3 mb-md-4 justify-content-center">
+        <div class="col-xl-10 col-xxl-8 position-relative">
+            <img src="./assets/images/search-vision.svg" class="form-box-img">
+            <form class="row align-items-center g-2 g-md-3 justify-content-center justify-content-md-end">
+                <div class="col-9 col-md-5 col-lg-6">
+                    <label class="visually-hidden" for="search">Preference</label>
+                    <input type="text" class="form-control form-box-input" id="search" placeholder="請輸入關鍵字">
+                </div>
+                <div class="col-3 col-lg-2">
+                    <button type="submit" class="btn btn-dark-gray form-box-btn">
+                        <p>搜尋</p><img src="./assets/images/ic-search.svg" alt="搜尋" class="ms-1 ms-md-2">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <h3 class="subtitle mb-3 text-center">O365 Teams 使用說明手冊</h3>
+</div>
+<div class="accordion accordion-stable" id="accordion-list" data-con="share">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button js-accordion-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1">
+                <div class="accordion-id">01.</div> 會議內容謄寫
+            </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list">
+                    <li>點選功能列「…其它」按鈕</li>
+                    <li>點選功能選項「開始謄寫」按鈕</li>
+                </ol>
+                <div class="notice-box mt-2 mb-3 w-100">
+                    備註：會議內容謄寫功能需使用電腦版才能使用該功能
+                </div>
+                <img src="./assets/images/share-p50.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 400px;">
+                <img src="./assets/images/share-p51.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item"><span>3.</span>
+                    <p>點選文字記錄旁「…」按鈕，點擊跳出的「更新口語語言」按鈕</p>
+                </div>
+                <img src="./assets/images/share-p52.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item"><span>4.</span>
+                    <p>選擇口語語言後按「確認」按鈕</p>
+                </div>
+                <img src="./assets/images/share-p53.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item"><span>5.</span>
+                    <p>顯示會議內容文字紀錄</p>
+                </div>
+                <img src="./assets/images/share-p54.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item mb-2"><span>6.</span>
+                    <p>會議結束請點選「停止謄寫」按鈕</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>7.</span>
+                    <p>切換「顯示文字紀錄」按鈕可停止或顯示內容紀錄</p>
+                </div>
+                <img src="./assets/images/share-p55.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item mb-2"><span>8.</span>
+                    <p>打開行事曆中的「會議名稱」</p>
+                </div>
+                <div class="accordion-list-item mb-2"><span>9.</span>
+                    <p>點選「錄製與謄寫」按鈕</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>10.</span>
+                    <p>顯示會議內容</p>
+                </div>
+                <img src="./assets/images/share-p56.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 800px;">
+                <div class="accordion-list-item"><span>11.</span>
+                    <p>下載「文字紀錄」檔案</p>
+                </div>
+                <img src="./assets/images/share-p57.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 800px;">
+                <div class="accordion-list-item"><span>12.</span>
+                    <p>打開「文字紀錄」Word檔案，顯示樣式範例</p>
+                </div>
+                <img src="./assets/images/share-p58.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <a href="./assets/download/O365 Teams使用說明手冊.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2">
+                <div class="accordion-id">02.</div>Teams新增會議
+            </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <h3 class="accordion-title">方式1:行事曆/立即開會</h3>
+                <ol class="accordion-list mb-5">
+                    <li>點選左邊功能列「行事曆」</li>
+                    <li>點選右邊「立即開會」按鈕</li>
+                </ol>
+                <img src="./assets/images/share-p59.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-2"><span>3.</span>
+                    <p>輸入「會議名稱」</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>4.</span>
+                    <p>點選「取得共用連結」按鈕</p>
+                </div>
+                <img src="./assets/images/share-p60.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-2"><span>5.</span>
+                    <p>依會議需求設定可點選「設定會議選項」做項目設定</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>6.</span>
+                    <p>點選「複製icon」按鈕，複製會議連結或點選「開始會議」按鈕</p>
+                </div>
+                <img src="./assets/images/share-p61.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-3"><span>7.</span>
+                    <p>「會議選項」設定內容頁面，設定好後按「儲存」按鈕</p>
+                </div>
+                <img src="./assets/images/share-p62.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 800px;">
+                <div class="accordion-list-item mb-2"><span>8.</span>
+                    <p>「會議選項」範例：誰無需先在大廳等候?選擇「所有人」，所有知道會議連結來賓可不需在大廳等候，直接進入會議室</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>9.</span>
+                    <p>設定好後按「儲存」按鈕</p>
+                </div>
+                <img src="./assets/images/share-p63.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 800px;">
+                <div class="accordion-list-item mb-3"><span>10.</span>
+                    <p>來賓可使用聊天功能輸入訊息內容圖示</p>
+                </div>
+                <img src="./assets/images/share-p64.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 800px;">
+                <h3 class="accordion-title">方式２:行事曆/新增會議</h3>
+                <ol class="accordion-list mb-5">
+                    <li>點選左邊功能列「行事曆」</li>
+                    <li>點選右邊「新增開會」按鈕</li>
+                </ol>
+                <img src="./assets/images/share-p65.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-2"><span>3.</span>
+                    <p>輸入「會議名稱」</p>
+                </div>
+                <div class="accordion-list-item mb-2"><span>4.</span>
+                    <p>輸入「與會人員mail帳號」</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>5.</span>
+                    <p>設定會議日期和時間</p>
+                </div>
+                <img src="./assets/images/share-p66.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item"><span>6.</span>
+                    <p>點選「傳送」按鈕，建立會議</p>
+                </div>
+                <img src="./assets/images/share-p67.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-3"><span>7.</span>
+                    <p>來賓Outlook會收到會議通知和連結，如圖示7</p>
+                </div>
+                <img src="./assets/images/share-p68.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-2"><span>8.</span>
+                    <p>點選建立好的會議按滑鼠右鍵</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>9.</span>
+                    <p>顯示功能框，點選「編輯」選項</p>
+                </div>
+                <img src="./assets/images/share-p69.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-2"><span>10.</span>
+                    <p>可點選「複製連結」，複製會議連結</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>11.</span>
+                    <p>依會議需求設定可點選「設定會議選項」做項目設定</p>
+                </div>
+                <img src="./assets/images/share-p70.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-3"><span>12.</span>
+                    <p>「會議選項」設定內容頁面，設定好後按「儲存」按鈕</p>
+                </div>
+                <img src="./assets/images/share-p71.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 700px;">
+                <div class="accordion-list-item mb-2"><span>13.</span>
+                    <p>「會議選項」範例：允許會議聊天?選擇「已啟用」，所有來賓皆可使用聊天功能</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>14.</span>
+                    <p>設定好後按「儲存」按鈕</p>
+                </div>
+                <img src="./assets/images/share-p72.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 700px;">
+                <div class="accordion-list-item mb-3"><span>15.</span>
+                    <p>來賓可使用聊天功能輸入訊息內容圖示</p>
+                </div>
+                <img src="./assets/images/share-p73.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 700px;">
+                <h3 class="accordion-title">方式3:團隊/排程會議</h3>
+                <ol class="accordion-list mb-5">
+                    <li>點選左邊功能列「團隊」</li>
+                    <li>點選右邊「開會」下拉選項「排程會議」選項，內容設定方式同【方式２:行事曆/新增會議】</li>
+                </ol>
+                <img src="./assets/images/share-p74.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 900px;">
+                <a href="./assets/download/O365 Teams使用說明手冊.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3">
+                <div class="accordion-id">03.</div> 忘記密碼
+            </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list mb-5">
+                    <li>點選「忘記密碼」</li>
+                    <li>輸入申請填寫的備用mail帳號(如: janechang@cwb.gov.tw)，驗證碼發送約需等1分鐘左右</li>
+                </ol>
+                <img src="./assets/images/share-p75.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 900px;">
+                <div class="accordion-list-item mb-2"><span>3.</span>
+                    <p>點選「電子郵件」</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>4.</span>
+                    <p>輸入「驗證碼」</p>
+                </div>
+                <img src="./assets/images/share-p76.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 900px;">
+                <div class="accordion-list-item mb-2"><span>5.</span>
+                    <p>輸入「驗證碼」後點「下一步」</p>
+                </div>
+                <div class="accordion-list-item mb-3"><span>6.</span>
+                    <p>輸入「新密碼」</p>
+                </div>
+                <img src="./assets/images/share-p77.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 900px;">
+                <a href="./assets/download/O365 Teams使用說明手冊.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse4">
+                <div class="accordion-id">04.</div> 修改密碼
+            </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list mb-5">
+                    <li>點選「帳號icon圖示」輸入「新密碼」</li>
+                    <li>點選「檢視帳戶」</li>
+                </ol>
+                <img src="./assets/images/share-p78.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-3"><span>3.</span>
+                    <p>點選左欄的「密碼」或中間頁面「變更密碼」</p>
+                </div>
+                <img src="./assets/images/share-p79.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-3"><span>4.</span>
+                    <p>輸入新密碼</p>
+                </div>
+                <img src="./assets/images/share-p80.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <a href="./assets/download/O365 Teams使用說明手冊.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <a href="share.html" class="content-bottom-btn">
+        <img src="./assets/images/ic-back.svg" alt="回共享資源列表" class="me-1">
+        回共享資源列表
+    </a>
+</div>
+		</div>
+		<footer class="white bg-gray-light text-center py-3">
+			<a href="#" class="gotop"><img src="./assets/images/ic-gotop.svg" alt="gotop"></a>
+			Copyright © 2022 中華民國交通部中央氣象局. All rights reserved.
+		</footer>
+		<!-- SCRIPTS -->
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.js"></script>
+		<script src="assets/js/moment-with-locales.min.js"></script>
+		<script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
+		<script src="assets/js/footable.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$('.table').footable({
+					"paging": {
+						"enabled": true,
+						"size": 10,
+					}
+				});
+				$('#date-start').datetimepicker({
+					format: 'L',
+					locale: 'zh-tw',
+					defaultDate: new Date(),
+				});
+				$('#date-end').datetimepicker({
+					format: 'L',
+					locale: 'zh-tw',
+					defaultDate: new Date(),
+				});
+			});
+		</script>
+	</div>
+</body>
+
+</html>

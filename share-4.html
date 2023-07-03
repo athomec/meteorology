@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<title>交通部中央氣象局-資訊服務中心</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="交通部中央氣象局,資訊服務中心,氣象局,統籌管理">
+	<meta name="description" content="交通部中央氣象局資訊服務中心" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta property="og:site_name" content="image.png" />
+	<meta property="og:image" content="assets/images/fb-img.png" />
+	<!--FB分享設定-->
+
+	<link rel="icon" href="assets/images/favicon.png" type="image/ico" />
+	<!--iconfont設定-->
+	<link rel="stylesheet" href="assets/style/all.css">
+	<!--css設定-->
+</head>
+
+<body>
+	<!-- loading開始 -->
+	<div id="preloader">
+		<div id="status"><img src="./assets/images/loading.gif" /></div>
+	</div>
+
+	<!-- 登入視窗開始 -->
+	<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary-color">
+					<h5 class="modal-title white mx-auto d-flex align-items-center">
+						<img src="./assets/images/ic-lock.svg" alt="登入"> 登入
+					</h5>
+				</div>
+				<div class="modal-body pb-0 px-4 px-md-5">
+					<div class="mb-3">
+						<label for="account" class="form-label">帳號</label>
+						<input type="text" class="form-control" id="account" placeholder="請輸入帳號">
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">密碼</label>
+						<input type="text" class="form-control" id="password" placeholder="請輸入密碼">
+						<span class="notice danger-dark-color d-flex mt-1">
+							<img src="./assets/images/ic-warning.svg" alt="錯誤" class="me-1"> 請輸入正確密碼
+						</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								記住帳號
+							</label>
+						</div>
+						<a href="account.html" class="link-primary-light-color d-flex align-items-center mb-3">
+							<img src="./assets/images/ic-help.svg" alt="忘記密碼" class="me-1"> 忘記密碼
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer border-0 pt-2 justify-content-center">
+					<button type="button" class="btn btn-dark-gray px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-dark-danger-color px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">登入</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 登入視窗結束 -->
+	<div class="wrapper">
+		<header class="header">
+			<a href="index.html" class="header-logo"><img src="./assets/images/logo.svg" alt="交通部中央氣象局 logo"></a>
+			<h1 class="header-title"><img src="./assets/images/main-title.svg" alt="統籌管理-服務中心"></h1>
+			<img src="./assets/images/header-vision.svg" class="header-vision">
+			<div class="header-link">
+				<a href="index.html" class="header-link-item font-bold me-3 d-none d-sm-flex">
+					<img src="./assets/images/ic-home.svg" alt="回首頁" class="header-link-img me-1"> 首頁
+				</a>
+				<a href="https://athomec.github.io/meteorology-backstage/login.html" target="_blank"
+					class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-manage.svg" alt="網站導覽" class="header-link-img me-1"> 管理
+				</a>
+				<a href="sitemap.html" class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-sitemap.svg" alt="網站導覽" class="header-link-img me-1"> 導覽
+				</a>
+				<a href="#" class="header-link-item d-flex font-bold" data-bs-toggle="modal" data-bs-target="#login">
+					<img src="./assets/images/ic-member.svg" alt="登入" class="header-link-img me-1"> 登入
+				</a>
+			</div>
+		</header>
+		<nav class="navbar navbar-expand-lg py-lg-0">
+			<div class="container-fluid">
+				<button class="navbar-toggler collapsed px-1 px-sm-3" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<img src="./assets/images/ic-menu.svg" alt="選單">
+				</button>
+				<div class="navbar-collapse collapse justify-content-center" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="support.html" class="nav-link">
+								<p>線上報修</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="apply.html" class="nav-link">
+								<p>表單申請</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="account.html" class="nav-link">
+								<p>帳密開通</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="assets.html" class="nav-link">
+								<p>資產管理</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="hardware.html" class="nav-link">
+								<p>硬體健康</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="monitor.html" class="nav-link">
+								<p>效能監看</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="share.html" class="nav-link">
+								<p>共享資源</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="qa.html" class="nav-link">
+								<p>常見問題</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="feedback.html" class="nav-link">
+								<p>意見回饋</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="marquee bg-secondary-light-color" data-con="page">
+			<div class="container d-flex py-2">
+				<img src="./assets/images/ic-speaker.svg" alt="跑馬燈" class="me-2">
+				<marquee direction="right">
+					「中央氣象局天氣預報」每日有4次主要發布時間，分別在台灣時間清晨5時0分左右、上午11時0分左右、下午5時0分左右、及晚上11時0分左右。</marquee>
+			</div>
+		</div>
+
+		<div class="content">
+			
+<h2 class="title">
+    <div class="title-con"><img src="./assets/images/menu-ic7.svg" alt="共享資源icon"> 共享資源</div>
+</h2>
+<div class="container">
+    <div class="row form-box bg-pale-color mb-3 mb-md-4 justify-content-center">
+        <div class="col-xl-10 col-xxl-8 position-relative">
+            <img src="./assets/images/search-vision.svg" class="form-box-img">
+            <form class="row align-items-center g-2 g-md-3 justify-content-center justify-content-md-end">
+                <div class="col-9 col-md-5 col-lg-6">
+                    <label class="visually-hidden" for="search">Preference</label>
+                    <input type="text" class="form-control form-box-input" id="search" placeholder="請輸入關鍵字">
+                </div>
+                <div class="col-3 col-lg-2">
+                    <button type="submit" class="btn btn-dark-gray form-box-btn">
+                        <p>搜尋</p><img src="./assets/images/ic-search.svg" alt="搜尋" class="ms-1 ms-md-2">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <h3 class="subtitle mb-3 text-center">VDI 與 MOTP 使用說明</h3>
+</div>
+<div class="accordion accordion-stable" id="accordion-list" data-con="share">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button js-accordion-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1">
+                <div class="accordion-id">01.</div> 使用情境說明
+            </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <img src="./assets/images/share-p17.jpg" alt="說明圖" class="accordion-pic" style="max-width: 700px;">
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2">
+                <div class="accordion-id">02.</div>本次新增 / 更新內容
+            </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <h3 class="accordion-title">顯示遠端主機圖檔</h3>
+                <h4 class="accordion-subtitle">使用者在遠端主機做好圖檔需要顯示，需要依循下列方式處理：</h4>
+                <ol class="accordion-list mb-5">
+                    <li>使用 Putty RDS 應用程式，連接安管外主機(如安管外 HPC)或透過跳板連接安管內主機(如安管內 HPC)</li>
+                    <li>執行程式或產製圖檔，如多個圖檔可壓縮處理後方便傳送</li>
+                    <li>
+                        以電子郵件方式直接將產品寄送到外部電子郵件信箱
+                        <div class="info-box my-2">
+                            mutt -s “Mail Subject” MailAccount@gmail.com a ${ OneAttachFile } < MailContent </div>
+                    </li>
+                    <li>接下來您就可以在個人電腦收信後進行圖檔或資料處理</li>
+                </ol>
+                <h3 class="accordion-title">增加 VDI 系統使用網段</h3>
+                <ol class="accordion-list mb-5">
+                    <li>VDI 浮動桌面使用 原 IP 網段為 <span class="danger-dark-color">10.6.99.0 ~ 253</span></li>
+                    <li>因應授權數增加，<span class="danger-dark-color">新增網段 10.6.98.0 ~ 253</span></li>
+                    <li>同仁需要因應：主機存取限制的設定需要加入新網段</li>
+                </ol>
+                <h3 class="accordion-title">讀卡機與憑證測試</h3>
+                <h4 class="accordion-subtitle">電腦需要具有可使用的讀卡機且可讀取自然人憑證，請依下列步驟測試：</h4>
+                <div class="accordion-list-item"><span>1.</span>
+                    <p>安裝 HiCOS 卡片管理工具
+                        <a href="https://moica.net.gov.tw/download_1.html" target="_blank"
+                            class="link-assist-dark-color">(https://moica.net.gov.tw/download_1.html)</a>
+                    </p>
+                </div>
+                <img src="./assets/images/share-p18.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 700px;">
+                <div class="accordion-list-item"><span>2.</span>
+                    <p>安裝 HiCOS 後進行環境檢測</p>
+                </div>
+                <img src="./assets/images/share-p19.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 400px;">
+                <img src="./assets/images/share-p20.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 700px;">
+                <div class="accordion-list-item mb-2"><span>3.</span>
+                    <p>如果測試成功，但使用公文系統仍有問題，請洽資訊中心並告知上述測試結果</p>
+                </div>
+                <div class="accordion-list-item mb-5"><span>4.</span>
+                    <p>如果讀卡機與憑證測試失敗，請先安裝 / 更新讀卡機驅動程式，測試成功後方可繼續測試公文系統</p>
+                </div>
+                <h4 class="accordion-subtitle">讀卡機驅動程式更新方法如下：</h4>
+                <div class="accordion-list-item"><span>1.</span>
+                    <p>在「開始」的地方按滑鼠右鍵，選擇「電腦管理」</p>
+                </div>
+                <img src="./assets/images/share-p21.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 350px;">
+                <div class="accordion-list-item"><span>2.</span>
+                    <p>左側選擇「裝置管理員」，展開後尋找「智慧卡讀卡機」</p>
+                </div>
+                <img src="./assets/images/share-p22.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item"><span>3.</span>
+                    <p>在「智慧卡讀卡機」設備上按滑鼠右鍵，選擇「更新驅動程式」</p>
+                </div>
+                <img src="./assets/images/share-p23.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <div class="accordion-list-item"><span>4.</span>
+                    <p>依據您使用的讀卡機是否附上 Windows 10 的驅動程式，決定選擇「自動搜尋驅動程式」或「瀏覽電腦上的驅動程式」選項</p>
+                </div>
+                <img src="./assets/images/share-p24.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="notice-box mt-2 mb-3 w-100">
+                    備註：更新讀卡機驅動程式後請關機後重新開機，並且再度進入此畫面檢查讀卡機驅動程式安裝狀態，如果仍然無法安裝成功，則該讀卡機將無法正常使用。
+                </div>
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3">
+                <div class="accordion-id">03.</div> 問題處理
+            </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <h3 class="accordion-title">MOTP 申請與認證 問題：資訊中心網路管理課</h3>
+                <ol class="accordion-list mb-5">
+                    <li>電話：2349-1291 ~ 1294</li>
+                    <li>電子郵件 <a href="mailto:netadm@cwb.gov.tw" class="link-assist-dark-color">netadm@cwb.gov.tw</a></li>
+                </ol>
+                <h3 class="accordion-title">AD 帳號申請與 VDI 使用問題：資訊中心系統控制課</h3>
+                <ol class="accordion-list mb-3">
+                    <li>電話：2349-1286 ~ 1288</li>
+                    <li>電子郵件 <a href="mailto:scs@cwb.gov.tw" class="link-assist-dark-color">scs@cwb.gov.tw</a></li>
+                </ol>
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse4">
+                <div class="accordion-id">04.</div> 名詞解釋
+            </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list mb-3">
+                    <li><span class="primary-color">MOTP 帳號：</span>兩階段認證系統，需要申請使用權限</li>
+                    <li><span class="primary-color">資訊中心 AD 帳號 VDI：</span>VDI 認證使用帳號與密碼</li>
+                    <li><span class="primary-color">VDI：</span>虛擬桌面系統，提供 VDI 浮動桌面與 RDS 應用程式兩個功能 VDI</li>
+                    <li><span class="primary-color">VDI 浮動桌面：</span>全功能 Windows 桌面，可提供所有 Windows 程式功能</li>
+                    <li><span class="primary-color">RDS 應用程式：</span>執行單一應用程式，執行效率高</li>
+                </ol>
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse5">
+                <div class="accordion-id">05.</div> 使用限制
+            </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list mb-3">
+                    <li>
+                        VDI 系統只能連網本局<span class="danger-dark-color">安管外</span>各主機，Internet、安管內、DMZ 與其他區域無法連線
+                    </li>
+                    <li>
+                        如果要連網<span class="danger-dark-color">安管內</span>、<span
+                            class="danger-dark-color">DMZ</span>與其他區域需要
+                        <span class="danger-dark-color">申請網路連線</span>
+                    </li>
+                    <li>
+                        被連線主機如有<span class="danger-dark-color">存取權限控制</span>需設定允許 VDI 的 IP 連入
+                    </li>
+                    <li>
+                        VDI 浮動桌面使用 IP 網段為 10.6.98.0 ~ 253<span class="danger-dark-color">10.6.98.0 ~ 253</span>、<span
+                            class="danger-dark-color">10.6.99.0 ~ 253</span>
+                    </li>
+                    <li>
+                        RDS 應用程式使用 IP 為：10.6.129.5<span class="danger-dark-color">10.6.129.5</span>、<span
+                            class="danger-dark-color">10.6.129.6</span>
+                    </li>
+                </ol>
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse6">
+                <div class="accordion-id">06.</div>申請 MOTP 與資訊中心 AD 帳號
+            </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list mb-5">
+                    <li>填寫中央氣象局遠端連線申請單、員工保密切結書與電腦帳戶異動申請表</li>
+                    <li>非本局同仁需填寫保密切結書、第三方保密切結書與相關合約封面</li>
+                </ol>
+                <img src="./assets/images/share-p25.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <img src="./assets/images/share-p26.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse7">
+                <div class="accordion-id">07.</div>安裝應用程式
+            </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list mb-3">
+                    <li>請先 安裝 VMWare Horizon Client 軟體</li>
+                    <li>目前最新版本 是 2103 ，下載連結為<a href="https:// reurl.cc/raplky" class="link-assist-dark-color">https://
+                            reurl.cc/raplky</a></li>
+                    <li>下載 MOTP 軟體 (Android 或 iOS 版)</li>
+                </ol>
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading8">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse8">
+                <div class="accordion-id">08.</div>連線
+            </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list mb-5">
+                    <li>在新增伺服器中新增 61.56.15.85 伺服器</li>
+                    <li>點擊 ICON 後即可連線</li>
+                </ol>
+                <img src="./assets/images/share-p27.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading9">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse9">
+                <div class="accordion-id">09.</div>登入
+            </button>
+        </h2>
+        <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <div class="accordion-list-item"><span>1.</span>
+                    <p>先輸入手機上 MOTP 密碼 (6 位數字)</p>
+                </div>
+                <img src="./assets/images/share-p28.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item"><span>2.</span>
+                    <p>再輸入 AD 帳號密碼 或稱為 MS 密碼</p>
+                </div>
+                <img src="./assets/images/share-p29.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading10">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse10">
+                <div class="accordion-id">10.</div>VDI 使用特性說明
+            </button>
+        </h2>
+        <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <div class="row mb-3 align-items-stretch">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="card p-3 h-100">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./assets/images/share-p30.jpg" class="mb-3" style="max-width: 110px;"">
+                                </div>
+                                <div class=" col-12">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title primary-color">VDI 浮動桌面</h5>
+                                        <p class="card-text">
+                                            公文系統專用<br>
+                                            可執行非應用程式集區內<br>
+                                            的其他程式
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="card p-3 h-100">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./assets/images/share-p31.jpg" class="mb-3" style="max-width: 110px;"">
+                                </div>
+                                <div class=" col-12">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title primary-color">RDS 應用程式</h5>
+                                        <p class="card-text">
+                                            使用氣象局 WebMail 系統 <br>
+                                            使用 NICE DCV 連接 WINS 系統 <br>
+                                            連線使用本局內部各種網頁
+                                        <div class="notice-box mt-2">備註：不可以連接 Internet 網頁</div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="card p-3 h-100">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./assets/images/share-p32.jpg" class="mb-3" style="max-width: 110px;"">
+                                </div>
+                                <div class=" col-12">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title primary-color">RDS 應用程式</h5>
+                                        <p class="card-text">
+                                            使用 Putty 連線 Linux 伺服主機<br>
+                                            各應用系統維護人員使用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="card p-3 h-100">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./assets/images/share-p33.jpg" class="mb-3" style="max-width: 110px;"">
+                                </div>
+                                <div class=" col-12">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title primary-color">RDS 應用程式</h5>
+                                        <p class="card-text">
+                                            使用 RDP 連線 Windows 伺服主機<br>
+                                            各應用系統維護人員使用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="card p-3 h-100">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./assets/images/share-p34.jpg" class="mb-3" style="max-width: 110px;"">
+                                </div>
+                                <div class=" col-12">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title primary-color">RDS 應用程式</h5>
+                                        <p class="card-text">
+                                            整合型連線工具<br>
+                                            各應用系統維護人員使用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="card p-3 h-100">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./assets/images/share-p35.jpg" class="mb-3" style="max-width: 110px;"">
+                                </div>
+                                <div class=" col-12">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title primary-color">RDS 應用程式</h5>
+                                        <p class="card-text">
+                                            使用 VNC 連線 VNC Server<br>
+                                            各應用系統維護人員使用
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading11">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse11">
+                <div class="accordion-id">11.</div>使用公文系統注意事項
+            </button>
+        </h2>
+        <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list">
+                    <li>登入虛擬桌面時，請將連線 USB 裝置中的勾勾全部取消</li>
+                    <li>VDI 僅支援 EZ100 晶片卡讀卡機</li>
+                </ol>
+                <img src="./assets/images/share-p36.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item"><span>3.</span>
+                    <p>資料交換需要使用隨身碟當媒介</p>
+                </div>
+                <img src="./assets/images/share-p37.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 700px;">
+                <div class="accordion-list-item"><span>4.</span>
+                    <p>操作公文系統增修附件時，如何存取個人電腦檔案路徑？</p>
+                </div>
+                <img src="./assets/images/share-p38.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 700px;">
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading12">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse12">
+                <div class="accordion-id">12.</div>使用結束
+            </button>
+        </h2>
+        <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <p class="mb-3">直接離開系統會保留您的階段工作，資源無法給下一個使用者使用，請依程序離開系統</p>
+                <img src="./assets/images/share-p39.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <img src="./assets/images/share-p40.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 700px;">
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading13">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse13">
+                <div class="accordion-id">13.</div>MOTP 註冊方式
+            </button>
+        </h2>
+        <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <ol class="accordion-list">
+                    <li>
+                        電腦瀏覽器連 <a href="http://10.6.1.149/MOTPPortal/"
+                            class="link-assist-dark-color">http://10.6.1.149/MOTPPortal/</a>
+                    </li>
+                    <li>請使用氣象局內網路登入，無法使用局內網路請聯絡網路管理課協助註冊</li>
+                    <li>點選載具管理</li>
+                </ol>
+                <img src="./assets/images/share-p41.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item">
+                    <span>4.</span>
+                    <p>系統自動寄出如下主旨的郵件，如未收到請與網管課聯繫</p>
+                </div>
+                <div class="info-box my-2">
+                    【 MOTP 通知】歡迎使用 MOTP 【 MOTP Notification 】 Welcome to MOTP
+                    郵件內含帳號密碼，請將帳密填入對應欄位，點選 登入</div>
+                <div class="notice-box mt-2 mb-5">注意：email 寄出密碼僅供 MOTP 註冊網頁使用，並非遠端連線 MS 密碼</div>
+                <img src="./assets/images/share-p42.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item mb-2">
+                    <span>5.</span>
+                    <p>選擇軟體註冊</p>
+                </div>
+                <div class="accordion-list-item mb-2">
+                    <span>6.</span>
+                    <p>啟動手機「MOTP Client」APP</p>
+                </div>
+                <div class="accordion-list-item mb-3">
+                    <span>7.</span>
+                    <p>(如已原有註冊載具請點選手機 APP 右上 號創建新載具)將您電腦螢幕上的紅色 8 位數字輸入到手機當做初始金鑰，點選下一步。
+                        (如未出現數字金鑰，請嘗試登出註冊網頁再重新登入)</p>
+                </div>
+                <img src="./assets/images/share-p43.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <img src="./assets/images/share-p44.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item mb-2">
+                    <span>8.</span>
+                    <p>將手機上顯示的序號、機器碼及 OTP 碼輸入電腦對應欄位，點選確定</p>
+                </div>
+                <div class="accordion-list-item mb-3">
+                    <span>9.</span>
+                    <p>如果驗證成功，註冊已成功完成。</p>
+                </div>
+                <img src="./assets/images/share-p45.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item mb-2">
+                    <span>10.</span>
+                    <p>如果驗證失敗，依下法再次確認</p>
+                </div>
+                <div class="accordion-list-item mb-3">
+                    <span>11.</span>
+                    <p>先選左上方箭頭回首頁</p>
+                </div>
+                <img src="./assets/images/share-p46.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <img src="./assets/images/share-p47.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <div class="accordion-list-item">
+                    <span>12.</span>
+                    <p>如果驗證成功，註冊已成功完成。如 OTP 碼再次驗證失敗，見下一頁『常見狀況排除』，或請聯絡網管課</p>
+                </div>
+                <img src="./assets/images/share-p48.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <img src="./assets/images/share-p49.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
+                <h3 class="accordion-title">網頁無法取得初始金鑰</h3>
+                <p class="mb-5">請登出註冊網頁再重新登入，重新嘗試。</p>
+                <h3 class="accordion-title">註冊出現錯誤</h3>
+                <p class="mb-3">可能已存在載具，或是過程步驟輸入錯誤，請先確認『載具：Server_0 』是否存在，刪除後重新註冊。</p>
+                <h4 class="accordion-subtitle">步驟如下：</h4>
+                <ol class="accordion-list mb-3">
+                    <li>主畫面點選『載具： Server_0 』</li>
+                    <li>載具管理頁面下，刪除『 Server_0 xxxxxxxx 』</li>
+                    <li>依照 前面步驟 重新註冊</li>
+                </ol>
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading14">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse14">
+                <div class="accordion-id">14.</div>顯示遠端主機圖檔
+            </button>
+        </h2>
+        <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body p-2 pb-4">
+                <h3 class="accordion-title">使用者在遠端主機做好圖檔需要顯示，需要依循下列方式處理</h3>
+                <div class="accordion-list-item">
+                    <span>1.</span>
+                    <p>安內主機設定 Mail Relay 到安管內 電子郵件伺服器
+                        <a href="http://10.6.1.149/MOTPPortal/"
+                            class="link-assist-dark-color">http://10.6.1.149/MOTPPortal/</a>
+                    </p>
+                </div>
+                <div class="info-box my-2">
+                    /etc/postfix/main.cf -> relayhost = ms.mic.cwb ]；重啟 postfix (參考)
+                </div>
+                <div class="accordion-list-item mb-2">
+                    <span>2.</span>
+                    <p>使用 Putty RDS 應用程式，連接安管外主機(如安管外 HPC)，或透過跳板連接安管內主機(如安管內 HPC)
+                    </p>
+                </div>
+                <div class="accordion-list-item mb-2">
+                    <span>3.</span>
+                    <p>執行程式或產製圖檔，多個圖檔可壓縮處理後方便傳送
+                    </p>
+                </div>
+                <div class="accordion-list-item">
+                    <span>4.</span>
+                    <p>以電子郵件方式直接將產品寄送到外部電子郵件信箱
+                    </p>
+                </div>
+                <div class="info-box my-2 mb-2">
+                    mutt-s “Mail Subject” MailAccount@gmail.com-a ${ OneAttachFile } < MailContent </div>
+                        <div class="accordion-list-item">
+                            <span>5.</span>
+                            <p>接下來您就可以在個人電腦收信後進行圖檔或資料處理</p>
+                        </div>
+                </div>
+                <a href="./assets/download/VDI與MOTP使用說明.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <a href="share.html" class="content-bottom-btn">
+        <img src="./assets/images/ic-back.svg" alt="回共享資源列表" class="me-1">
+        回共享資源列表
+    </a>
+</div>
+		</div>
+		<footer class="white bg-gray-light text-center py-3">
+			<a href="#" class="gotop"><img src="./assets/images/ic-gotop.svg" alt="gotop"></a>
+			Copyright © 2022 中華民國交通部中央氣象局. All rights reserved.
+		</footer>
+		<!-- SCRIPTS -->
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.js"></script>
+		<script src="assets/js/moment-with-locales.min.js"></script>
+		<script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
+		<script src="assets/js/footable.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$('.table').footable({
+					"paging": {
+						"enabled": true,
+						"size": 10,
+					}
+				});
+				$('#date-start').datetimepicker({
+					format: 'L',
+					locale: 'zh-tw',
+					defaultDate: new Date(),
+				});
+				$('#date-end').datetimepicker({
+					format: 'L',
+					locale: 'zh-tw',
+					defaultDate: new Date(),
+				});
+			});
+		</script>
+	</div>
+</body>
+
+</html>
