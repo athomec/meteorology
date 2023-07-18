@@ -160,7 +160,7 @@
 		<div class="content">
 			
 <h2 class="title">
-    <div class="title-con"><img src="./assets/images/menu-ic8.svg" alt="常見問題icon"> 常見問題</div>
+    <div class="title-con"><img src="./assets/images/menu-ic7.svg" alt="共享資源icon"> 共享資源</div>
 </h2>
 <div class="container">
     <div class="row form-box bg-pale-color mb-3 mb-md-4 justify-content-center">
@@ -180,63 +180,89 @@
         </div>
     </div>
 </div>
-<div class="container px-0">
-    <h3 class="subtitle mb-3" id="share1">一、VDI Q&A</h3>
-    <ul class="row card-list g-2 g-md-3 mb-5">
-        <li class="col-lg-6 col-xxl-4 card-list-item">
-            <a href="qa-1.html" class="card-list-link">
-                <span class="card-list-number">01</span>
-                <p class="card-list-txt">VDI 安裝與更新問題</p>
-                <img src="./assets/images/ic-right.svg" class="card-list-icon">
-            </a>
-        </li>
-        <li class="col-lg-6 col-xxl-4 card-list-item">
-            <a href="qa-2.html" class="card-list-link">
-                <span class="card-list-number">02</span>
-                <p class="card-list-txt">VDI 連線問題</p>
-                <img src="./assets/images/ic-right.svg" class="card-list-icon">
-            </a>
-        </li>
-        <li class="col-lg-6 col-xxl-4 card-list-item">
-            <a href="qa-3.html" class="card-list-link">
-                <span class="card-list-number">03</span>
-                <p class="card-list-txt">VDI 憑證問題</p>
-                <img src="./assets/images/ic-right.svg" class="card-list-icon">
-            </a>
-        </li>
-        <li class="col-lg-6 col-xxl-4 card-list-item">
-            <a href="qa-4.html" class="card-list-link">
-                <span class="card-list-number">04</span>
-                <p class="card-list-txt">VDI 登入問題</p>
-                <img src="./assets/images/ic-right.svg" class="card-list-icon">
-            </a>
-        </li>
-    </ul>
-    <hr>
-    <h3 class="subtitle mb-3" id="share1">二、居家辦公刷卡服務 Q&A</h3>
-    <ul class="row card-list g-2 g-md-3 mb-5">
-        <li class="col-lg-6 col-xxl-4 card-list-item">
-            <a href="qa-5.html" class="card-list-link">
-                <span class="card-list-number">01</span>
-                <p class="card-list-txt">本局員工居家辦公刷卡服務使用說明 Q&A</p>
-                <img src="./assets/images/ic-right.svg" class="card-list-icon">
-            </a>
-        </li>
-        <li class="col-lg-6 col-xxl-4 card-list-item">
-            <a href="qa-6.html" class="card-list-link">
-                <span class="card-list-number">02</span>
-                <p class="card-list-txt">計畫人員居家辦公刷卡服務使用說明 Q&A</p>
-                <img src="./assets/images/ic-right.svg" class="card-list-icon">
-            </a>
-        </li>
-    </ul>
+<div class="text-center">
+    <h3 class="subtitle mb-3 text-center">本局員工居家辦公刷卡服務使用說明</h3>
+</div>
+<div class="accordion accordion-stable" id="accordion-list">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button js-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                <div class="accordion-id">Q<span>1.</span></div> 一般計畫人員 v2
+            </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
+                <ol class="accordion-list">
+                    <li>
+                        目前本局使用之 VMware Horizon Client 版本為 8 ，尚未安裝或更新之長官及同仁，<a href="#"
+                            class="link-assist-dark-color">請點我下載</a>
+                        <div class="notice-box mt-2">備註：下載頁面之語系為「英語」， 點進去後按「DOWNLOAD NOW」即開始下載</div>
+                    </li>
+                    <li>
+                        若安裝完成，打開VMware Horizon Client，點選畫面右上角 <img src="./assets/images/qa-p2.jpg"
+                            class="accordion-pic-inline" style="width: 32px;"> ，選擇「關於 VMware Horizon Client
+                        」，即可看到版本資訊(組建編號為 8.X.X 以後，為 VMware Horizon Client 8)
+                    </li>
+                </ol>
+                <img src="./assets/images/qa-p1.jpg" alt="說明圖" class="accordion-pic" style="max-width: 600px;">
+                <a href="#" class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2">
+                <div class="accordion-id">Q<span>2.</span></div> 科課長以上主管 v1
+            </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordion-list">
+            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
+                若遇到下圖狀況，為系統使用自簽憑證之警告訊息，按「確定」繼續即可。
+                <img src="./assets/images/qa-p3.jpg" alt="說明圖" class="accordion-pic" style="max-width: 500px;">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3">
+                <div class="accordion-id">Q<span>3.</span></div> 人事管理員 v1
+            </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
+                若遇到上述問題，敬請聯繫資訊中心 網管課鍾子健先生(分機1293)協助處理。
+                <img src="./assets/images/qa-p4.jpg" alt="說明圖" class="accordion-pic" style="max-width: 400px;">
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse4">
+                <div class="accordion-id">Q<span>4.</span></div> 本局員工 v3
+            </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
+                若遇到上述問題，敬請聯繫資訊中心 網管課鍾子健先生(分機1293)協助處理。
+                <img src="./assets/images/qa-p4.jpg" alt="說明圖" class="accordion-pic" style="max-width: 400px;">
+            </div>
+        </div>
+    </div>
 </div>
 <div class="text-center">
-    <a href="index.html" class="content-bottom-btn">
-        <img src="./assets/images/ic-back.svg" alt="回首頁" class="me-1">
-        回首頁
+    <a href="share.html" class="content-bottom-btn">
+        <img src="./assets/images/ic-back.svg" alt="回共享資源列表" class="me-1">
+        回共享資源列表
     </a>
 </div>
+
 		</div>
 		<footer class="white bg-gray-light text-center py-3">
 			<a href="#" class="gotop"><img src="./assets/images/ic-gotop.svg" alt="gotop"></a>

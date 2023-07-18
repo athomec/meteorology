@@ -181,30 +181,59 @@
     </div>
 </div>
 <div class="text-center">
-    <h3 class="subtitle mb-3 text-center">VDI 安裝與更新問題</h3>
+    <h3 class="subtitle mb-3 text-center">VDI 連線問題</h3>
 </div>
 <div class="accordion" id="accordion-list">
     <div class="accordion-item">
-        <h2 class="accordion-header" id="heading1">
-            <button class="accordion-button js-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                <div class="accordion-id">Q<span>1.</span></div> VMware Horizon Client 版本如何查看
+        <h2 class="accordion-header">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1">
+                <div class="accordion-id">Q<span>1.</span></div> VDI 浮動桌面或 Horizon App 顯示無法載入問題
             </button>
         </h2>
-        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
-            data-bs-parent="#accordion-list">
+        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
+                <h3 class="accordion-title">VDI 浮動桌面：</h3>
+                <ol class="accordion-list mb-3">
+                    <li>請於 Horizon Client「設定」，檢查「VDI 浮動桌面」連線方式是否為「PCoIP」。 </li>
+                    <li>變更網路連線方式，試著改用其他 4G 或固網。</li>
+                    <li>使用其他 Proxy Server 或停用 Proxy。</li>
+                    <li>先登出 Horizon Client ，約 30 分鐘後再嘗試登入使用。</li>
+                </ol>
+                <img src="./assets/images/qa-p6.jpg" alt="說明圖" class="accordion-pic" style="max-width: 600px;">
+                <h3 class="accordion-title">Horizon App：</h3>
+                <ol class="accordion-list mb-3">
+                    <li>請於 Horizon Client「設定」，檢查「應用程式」通訊協定是否為「PCoIP」。 </li>
+                    <li>變更網路連線方式，試著改用其他 4G 或固網。</li>
+                    <li>使用其他 Proxy Server 或停用 Proxy。</li>
+                    <li>先登出 Horizon Client ，約 30 分鐘後再嘗試登入使用。</li>
+                </ol>
+                <img src="./assets/images/qa-p7.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 600px;">
+                <div class="info-box my-2 mb-3">
+                    如仍無法正常載入，請聯繫資訊中心系統課林彥谷（#1398）處理。
+                </div>
+                <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2">
+                <div class="accordion-id">Q<span>2.</span></div> 登入 VDI 浮動桌面後中斷就無法再次登入問題
+            </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
             <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
                 <ol class="accordion-list">
-                    <li>
-                        目前建議使用之 VMware Horizon Client 版本為 8，尚未安裝或更新者，請參考
-                        <a href="share-3.html" class="link-assist-dark-color" target="_blank">下載 VMware Horizon Client</a>。
-                    </li>
-                    <li>
-                        若安裝完成，開啟 VMware Horizon Client，點選畫面右上角 <img src="./assets/images/qa-p2.jpg"
-                            class="accordion-pic-inline" style="width: 32px;"> ，選擇「關於 VMware Horizon Client
-                        」，即可看到版本資訊（組建編號為 8.X.X 以後，為 VMware Horizon Client 8）。
-                    </li>
+                    <li>檢查目前上網是否正常或嘗試使用其他網路( 4G 或固網)。</li>
+                    <li>離線 10 分鐘後再嘗試登入。</li>
+                    <li>請嘗試將電腦重新開機或重新安裝 VMware Horizon Client。</li>
+                    <li>請聯繫資訊中心系統課林彥谷先生(#1398)處理。</li>
                 </ol>
-                <img src="./assets/images/qa-p1.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 600px;">
+                <img src="./assets/images/qa-p13.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 250px;">
                 <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
                     <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
                 </a>
@@ -214,48 +243,80 @@
     <div class="accordion-item">
         <h2 class="accordion-header">
             <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                <div class="accordion-id">Q<span>2.</span></div> 請問要輸入什麼網址，以登入 VMware Horizon 8？
-            </button>
-        </h2>
-        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion-list">
-            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
-                <p>請開啟 VMware Horizon Client，點選「新增伺服器」，跳出小視窗後輸入伺服器名稱「vdiuag.cwb.gov.tw」，點選「連線」並依照指示輸入帳號、MOTP 密碼等。</p>
-                <img src="./assets/images/qa-p21.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 900px;">
-                <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
-                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                <div class="accordion-id">Q<span>3.</span></div> 安裝或更新 VMware Horizon Client 後，開啟 VDI 浮動桌面及 Horizon App 畫面不顯示問題
+                data-bs-target="#collapse3">
+                <div class="accordion-id">Q<span>3.</span></div> VDI 浮動桌面、Putty App或遠端桌面App無法登入目標主機問題
             </button>
         </h2>
         <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
             <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
+                <ol class="accordion-list">
+                    <li>確認目標主機帳密是否輸入正確，登入帳號是否被鎖定。</li>
+                    <li>確認目標主機是否允許 VDI 桌面網段連入。(10.6.98.0、10.6.99.0)</li>
+                    <li>確認目標主機是否允許 RDS Server連入。(10.6.129.11、10.6.129.12)</li>
+                </ol>
+                <img src="./assets/images/qa-p14.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 500px;">
+                <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse4">
+                <div class="accordion-id">Q<span>4.</span></div> VDI 桌面使用到一半發生斷線問題
+            </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
+                <ol class="accordion-list">
+                    <li>請檢查PC或NB網路連線是否正常？網路是否發生瞬斷不穩情形。</li>
+                    <li>如網路正常，請嘗試重新連線並觀察連線情形。</li>
+                    <li>請聯繫資訊中心系統課林彥谷先生(#1398)處理。</li>
+                </ol>
+                <img src="./assets/images/qa-p15.jpg" alt="說明圖" class="accordion-pic -3" style="max-width: 250px;">
+                <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                <div class="accordion-id">Q<span>5.</span></div>透過指令連至 Horizon8 vdiuag.cwb.gov.tw
+            </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
                 <div class="accordion-list-item mb-2">
                     <span>1.</span>
-                    <p>請於 Horizon Client，按「設定」，選擇「VDI 浮動桌面」，先將連線方式改成「VMware Blast」並進行連線。</p>
+                    <p>將滑鼠移至左下角「視窗」圖示<img src="./assets/images/qa-p26.png" class="d-inline-block ms-1" style="max-width: 26px;"> ，按下滑鼠右鍵選擇「執行」。</p>
                 </div>
-                <img src="./assets/images/qa-p16.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 600px;">
+                <img src="./assets/images/qa-p27.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 300px;">
                 <div class="accordion-list-item mb-2">
                     <span>2.</span>
-                    <p>請於 Horizon Client 中，按「設定」，選擇「應用程式」，先將通訊協定改成「VMwareBlast」並進行連線。</p>
+                    <p>根據 VMware Horizon Client 安裝的路徑貼上指令，並按「確定」。</p>
                 </div>
-                <img src="./assets/images/qa-p17.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 600px;">
+                <div class="info-box mb-2">
+                    C:\Program Files (x86)\VMware\VMware Horizon View Client\vmware-view.exe --serverURL="vdiuag.cwb.gov.tw"
+                </div>
+                <span class="primary-light-color mx-3 mb-2 d-inline-block">或</span>
+                <div class="info-box mb-3">
+                    C:\Program Files\VMware\VMware Horizon View Client\vmware-view.exe --serverURL="vdiuag.cwb.gov.tw"
+                </div>
+                <img src="./assets/images/qa-p28.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 500px;">
                 <div class="accordion-list-item mb-2">
                     <span>3.</span>
-                    <p>以上調整後連線會出現連線失敗訊息，此時再將「VDI 浮動桌面」及「應用程式」連線方式再改回「PCoIP」，連線後即可正常顯示。</p>
+                    <p>完成二道密碼驗證登入後，點選右上方「設定」。</p>
                 </div>
-                <img src="./assets/images/qa-p18.jpg" alt="說明圖" class="accordion-pic" style="max-width: 500px;">
-                <img src="./assets/images/qa-p19.jpg" alt="說明圖" class="accordion-pic" style="max-width: 500px;">
-                <div class="notice-box mb-3">說明 : 發現 VMware Horizon Client 雖已設定 PCoIP 協定，但底層可能仍透過 VMware Blast 連線，因此藉由此方式處理。
+                <img src="./assets/images/qa-p29.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
+                <div class="accordion-list-item mb-2">
+                    <span>4.</span>
+                    <p>點選左方「VDI 浮動桌面」，於右邊區域將「自動連線至此桌面平台」關閉，下次連線時就不會直接登入浮動桌面。</p>
                 </div>
-                <br>
+                <img src="./assets/images/qa-p30.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 900px;">
                 <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
                     <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
                 </a>

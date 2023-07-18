@@ -181,61 +181,94 @@
     </div>
 </div>
 <div class="text-center">
-    <h3 class="subtitle mb-3 text-center">計畫人員居家辦公刷卡服務使用說明 Q&A</h3>
+    <h3 class="subtitle mb-3 text-center">VDI 憑證問題</h3>
 </div>
 <div class="accordion" id="accordion-list">
     <div class="accordion-item">
-        <h2 class="accordion-header" id="heading1">
-            <button class="accordion-button js-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
-                aria-expanded="true" aria-controls="collapse1">
-                <div class="accordion-id">Q<span>1.</span></div>如居家辦公線上刷卡服務有問題，該如何處理？
+        <h2 class="accordion-header">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1">
+                <div class="accordion-id">Q<span>1.</span></div> VMware Horizon Client 連線時出現憑證警告訊息
             </button>
         </h2>
-        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
-            data-bs-parent="#accordion-list">
+        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
             <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
-                <ol class="accordion-list">
-                    <li>開啟 VDI <span class="primary-light-color">▶</span> 開啟任一瀏覽器 <span class="primary-light-color">▶</span> 輸入連結
-                        <a href="http://10.6.1.192/wfh/wfhcard.aspx" target="_blank"
-                            class="link-assist-dark-color">http://10.6.1.192/wfh/wfhcard.aspx</a>，進行刷卡。
-                    </li>
-                    <li>如仍有刷卡問題，請將電腦螢幕截圖留存（須包含日期及時間），其他依「各單位人事管理員」相關規定辦理。</li>
-                </ol>
-                <div class="notice-box mb-3">
-                    備註：「各單位人事管理員」指的是各單位指派的計畫人員管理員，非指人事室的差勤管理員，如：資訊中心為支援課劉亦容。
-                </div>
-                <img src="./assets/images/qa-p20.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 700px;">
-                <a href="./assets/download/計畫人員居家辦公刷卡服務使用說明(一般計畫人員)v2.pdf" download class="accordion-btn btn-dark-danger-color">
+                <h3 class="accordion-title">如連線時出現憑證相關問題，請依下方步驟設定：</h3>
+                <p class="mb-3">開啟 VMware Horizon Client，請點選右上方「設定（Setting）」，進入頁面後點選「安全性」，並於右方選擇「不要驗證伺服器身分識別憑證(Do
+                not verify server identity certificate)」，設定後即可正常登入。</p>
+                <img src="./assets/images/qa-p3.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 400px;">
+                <img src="./assets/images/qa-p22.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 900px;">
+                <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
                     <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
                 </a>
             </div>
-            
         </div>
     </div>
     <div class="accordion-item">
-        <h2 class="accordion-header" id="heading2">
-            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                <div class="accordion-id">Q<span>2.</span></div> 如出現「您本日不在居家辦公名單」訊息，該如何處理？
+        <h2 class="accordion-header">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                <div class="accordion-id">Q<span>2.</span></div> VDI 無法使用自然人憑證問題
             </button>
         </h2>
-        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+            <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
+                <div class="accordion-list-item mb-2">
+                    <span>1.</span><p>請確認是否使用 EZ100 讀卡機。</p>
+                </div>
+                <div class="accordion-list-item mb-5">
+                    <span>2.</span>
+                    <p>檢查 PC 或 NB 是否已安裝 EZ100 驅動程式及 HiCOS 卡片管理工具。</p>
+                </div>
+                <p class="mb-3">上述軟體若未安裝可能無法正常運作，請點以下官方連結下載：</p>
+                <div class="info-box my-2 mb-3">
+                    ► 讀卡機驅動程式 → <a href="https://reurl.cc/VD4e25" target="_blank" class="link-assist-dark-color">https://reurl.cc/VD4e25</a><br>
+                    ► HiCOS 卡片管理工具 → <a href="https://reurl.cc/b2lxdv" target="_blank" class="link-assist-dark-color">https://reurl.cc/b2lxdv</a>
+                </div>
+                <img src="./assets/images/qa-p8.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 200px;">
+                <div class="accordion-list-item mb-2">
+                    <span>3.</span>
+                    <p>前述步驟完成後，請至<a href="https://moica.nat.gov.tw" target="_blank" class="link-assist-dark-color">MOICA 內政部憑證管理中心</a>點選
+                        <a href="https://moica.nat.gov.tw/ShowCardInfo.html" target="_blank" class="link-assist-dark-color">檢視憑證 IC 卡資訊</a>
+                        ，確認卡片資訊可正常讀出(如下圖)。
+                    </p>
+                </div>
+                <img src="./assets/images/qa-p9.jpg" alt="說明圖" class="accordion-pic mb-5" style="max-width: 800px;">
+                <div class="accordion-list-item mb-2">
+                    <span>4.</span>
+                    <p>開啟浮動桌面後，請確認「 USB 裝置」下 EZ100 讀卡機狀態為「關閉」，即可正常使用。</p>
+                </div>
+                <img src="./assets/images/qa-p10.jpg" alt="說明圖" class="accordion-pic" style="max-width: 450px;">
+                <h3 class="accordion-title">若前面步驟皆完成，仍無法使用，請檢查：</h3>
+                <ol class="accordion-list mb-3">
+                    <li>自然人憑證卡上面的晶片是否磨損。</li>
+                    <li>自然人憑證卡插入方向是否正確。</li>
+                    <li>使用其他自然人憑證卡，測試能否讀取正常。</li>
+                    <li>除卡片本身外，亦請檢查讀卡機是否故障(嘗試使用讀卡機讀取晶片提款卡登入網路銀行)。</li>
+                    <li>檢查防毒軟體是否啟用 USB 裝置監控機制。</li>
+                    <li>離線 10 分鐘後再嘗試登入，使用系統新配發的虛擬桌面環境再行測試。</li>
+                </ol>
+                <img src="./assets/images/qa-p11.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 200px;">
+                <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
+                    <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button js-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3" aria-expanded="false">
+                <div class="accordion-id">Q<span>3.</span></div>Apple、Linux 作業系統無法讀取自然人憑證問題
+            </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading11"
             data-bs-parent="#accordion-list">
             <div class="accordion-body ps-2 ps-md-5 pt-2 pe-2 pb-4">
-                <p class="mb-2">請與「各單位人事管理員」確認是否已完成居家辦公設定。</p>
-                <div class="notice-box mb-5">
-                    備註：「各單位人事管理員」指的是各單位指派的計畫人員管理員，非指人事室的差勤管理員，如：資訊中心為支援課劉亦容。
-                </div>
-                <h3 class="accordion-title">如確認設定成功，仍有刷卡問題：</h3>
-                <ol class="accordion-list mb-2">
-                    <li>請與各單位人事管理員反應此問題。</li>
-                    <li>請將電腦螢幕截圖留存（須包含日期及時間），其他依各單位計畫人員相關規定辦理。</li>
-                </ol>
-                <div class="notice-box mb-3">
-                    備註：「各單位人事管理員」指的是各單位指派的計畫人員管理員，非指人事室的差勤管理員，如：資訊中心為支援課劉亦容。
-                </div>
-                <img src="./assets/images/qa-p20.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 700px;">
-                <a href="./assets/download/計畫人員居家辦公刷卡服務使用說明(一般計畫人員)v2.pdf" download class="accordion-btn btn-dark-danger-color">
+                <p class="mb-3">
+                    使用 Apple、Linux 作業系統連入 VDI ，無法使用自然人憑證登入公文系統及行政資訊服務網，建議改用 Windows 平台進行 VDI 相關操作。
+                </p>
+                <img src="./assets/images/qa-p25.jpg" alt="說明圖" class="accordion-pic mb-3" style="max-width: 600px;">
+                <a href="./assets/download/VDI桌面使用與QA_-常見問題.pdf" download class="accordion-btn btn-dark-danger-color">
                     <img src="./assets/images/ic-download.svg" alt="下載" class="me-1">手冊下載
                 </a>
             </div>
