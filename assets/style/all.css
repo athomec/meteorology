@@ -14068,6 +14068,13 @@ textarea::placeholder {
 .accordion[data-con="share"] .accordion-body:before {
   display: none; }
 
+.accordion-base .accordion-button {
+  font-size: 1.125rem;
+  font-weight: 500; }
+  @media (max-width: 1200px) {
+    .accordion-base .accordion-button {
+      font-size: 1rem; } }
+
 .accordion-base .accordion-button:not(.collapsed) {
   background: #7183AC; }
 
