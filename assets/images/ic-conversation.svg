@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="ic-conversation" transform="translate(-6889 -7357)">
+    <g id="conversation" transform="translate(6889 7360)" opacity="0.67">
+      <path id="Path_4642" data-name="Path 4642" d="M8.139,16.2H17.35A7.373,7.373,0,0,0,18.983,16l2.159,2.159a1.151,1.151,0,0,0,1.966-.814V13.731a8.04,8.04,0,0,0,2.3-5.594A8.136,8.136,0,0,0,17.351,0H8.139A8.2,8.2,0,0,0,0,8.137,8.136,8.136,0,0,0,8.139,16.2ZM17.35,6.985A1.151,1.151,0,1,1,16.2,8.137,1.151,1.151,0,0,1,17.35,6.985Zm-4.606,0a1.151,1.151,0,1,1-1.151,1.151A1.151,1.151,0,0,1,12.745,6.985Zm-4.606,0A1.151,1.151,0,1,1,6.987,8.137,1.151,1.151,0,0,1,8.139,6.985Z" transform="translate(-0.002 0)" fill="#acacac"/>
+    </g>
+    <rect id="Rectangle_1770" data-name="Rectangle 1770" width="26" height="26" transform="translate(6889 7357)" fill="none"/>
+  </g>
+</svg>

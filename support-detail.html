@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<title>交通部中央氣象署-資訊作業平台</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="交通部中央氣象署,資訊作業平台,氣象署,統籌管理">
+	<meta name="description" content="交通部中央氣象署 資訊作業平台" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta property="og:site_name" content="image.png" />
+	<meta property="og:image" content="assets/images/fb-img.png" />
+	<!--FB分享設定-->
+
+	<link rel="icon" href="assets/images/favicon.png" type="image/ico" />
+	<!--iconfont設定-->
+	<link rel="stylesheet" href="assets/style/all.css">
+	<!--css設定-->
+</head>
+
+<body>
+	<!-- loading開始 -->
+	<div id="preloader">
+		<div id="status"><img src="./assets/images/loading.gif" /></div>
+	</div>
+
+	<!-- 登入視窗開始 -->
+	<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary-color">
+					<h5 class="modal-title white mx-auto d-flex align-items-center">
+						<img src="./assets/images/ic-lock.svg" alt="登入"> 登入
+					</h5>
+				</div>
+				<div class="modal-body pb-0 px-4 px-md-5">
+					<div class="mb-3">
+						<label for="account" class="form-label">帳號</label>
+						<input type="text" class="form-control" id="account" placeholder="請輸入帳號">
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">密碼</label>
+						<input type="text" class="form-control" id="password" placeholder="請輸入密碼">
+						<span class="notice danger-dark-color d-flex mt-1">
+							<img src="./assets/images/ic-warning.svg" alt="錯誤" class="me-1"> 請輸入正確密碼
+						</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								記住帳號
+							</label>
+						</div>
+						<a href="account.html" class="link-primary-light-color d-flex align-items-center mb-3">
+							<img src="./assets/images/ic-help.svg" alt="忘記密碼" class="me-1"> 忘記密碼
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer border-0 pt-2 justify-content-center">
+					<button type="button" class="btn btn-dark-gray px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-dark-danger-color px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">登入</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 登入視窗結束 -->
+	<div class="wrapper">
+		<header class="header">
+			<a href="index.html" class="header-logo"><img src="./assets/images/logo.svg" alt="交通部中央氣象局 logo"></a>
+			<h1 class="header-title"><img src="./assets/images/main-title.svg" alt="統籌管理-服務中心"></h1>
+			<img src="./assets/images/header-vision.svg" class="header-vision">
+			<div class="header-link">
+				<a href="index.html" class="header-link-item font-bold me-3 d-none d-sm-flex">
+					<img src="./assets/images/ic-home.svg" alt="回首頁" class="header-link-img me-1"> 首頁
+				</a>
+				<a href="https://athomec.github.io/meteorology-backstage/login.html" target="_blank"
+					class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-manage.svg" alt="網站導覽" class="header-link-img me-1"> 管理
+				</a>
+				<a href="sitemap.html" class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-sitemap.svg" alt="網站導覽" class="header-link-img me-1"> 導覽
+				</a>
+				<a href="#" class="header-link-item d-flex font-bold" data-bs-toggle="modal" data-bs-target="#login">
+					<img src="./assets/images/ic-member.svg" alt="登入" class="header-link-img me-1"> 登入
+				</a>
+			</div>
+		</header>
+		<nav class="navbar navbar-expand-lg py-lg-0">
+			<div class="container-fluid">
+				<button class="navbar-toggler collapsed px-1 px-sm-3" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<img src="./assets/images/ic-menu.svg" alt="選單">
+				</button>
+				<div class="navbar-collapse collapse justify-content-center" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="support.html" class="nav-link">
+								<p>線上報修</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="apply.html" class="nav-link">
+								<p>表單申請</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="account.html" class="nav-link">
+								<p>帳密開通</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="assets.html" class="nav-link">
+								<p>資產管理</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="hardware.html" class="nav-link">
+								<p>硬體健康</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="monitor.html" class="nav-link">
+								<p>效能監看</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="share.html" class="nav-link">
+								<p>共享資源</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="qa.html" class="nav-link">
+								<p>常見問題</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="feedback.html" class="nav-link">
+								<p>意見回饋</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="marquee bg-secondary-light-color" data-con="page">
+			<div class="container d-flex py-2">
+				<img src="./assets/images/ic-speaker.svg" alt="跑馬燈" class="me-2">
+				<marquee direction="right">
+					「中央氣象局天氣預報」每日有4次主要發布時間，分別在台灣時間清晨5時0分左右、上午11時0分左右、下午5時0分左右、及晚上11時0分左右。</marquee>
+			</div>
+		</div>
+
+		<div class="content">
+			<h2 class="title">
+    <div class="title-con"><img src="./assets/images/menu-ic1.svg" alt="線上報修icon"> 線上報修</div>
+</h2>
+<div class="container px-0">
+    <div class="row justify-content-center support-form mb-4">
+        <div class="col-xl-10 col-xxl-8">
+            <ul class="row nav nav-tabs icon-toggle-menu justify-content-center js-toggle-menu mb-4" data-list="none">
+                <li class="col-6">
+                    <a href="#" class="icon-toggle-menu-item active js-toggle-btn" data-bs-toggle="collapse"
+                        data-bs-target="#check">
+                        <img src="./assets/images/ic-check.svg" alt="進度查詢">
+                        進度查詢
+                    </a>
+                </li>
+            </ul>
+            <div class="accordion-collapse collapse show" id="support" data-bs-parent=".support-form">
+                <div class="accordion accordion-base" id="accordion-list">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button js-accordion-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#info">
+                                報修資料
+                            </button>
+                        </h2>
+                        <div id="info" class="accordion-collapse collapse show">
+                            <div class="accordion-body px-0 pt-2 pb-4">
+                                <div class="case-detail mb-3">
+                                    <div class="case-detail-header">
+                                        <div class="case-detail-status bg-danger-light-color">待處理</div>
+                                        <div class="w-100 px-3">
+                                            <p class="me-3">申請日期：2022/11/20</p>
+                                            <div class="d-flex">
+                                                <img src="./assets/images/ic-list.svg" class="me-2"> 流程代碼：01 20231027
+                                                001
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="case-detail-body p-3 pb-2">
+                                        <div class="case-detail-list">
+                                            <img src="./assets/images/ic-member-apply.svg" class="case-detail-icon">
+                                            <ul class="case-detail-info">
+                                                <li class="case-detail-info-item"><span>報修員工編號：</span>354354</li>
+                                                <li class="case-detail-info-item"><span>中文姓名：</span>王大明</li>
+                                                <li class="case-detail-info-item"><span>所屬單位：</span>資訊中心 / 系統課</li>
+                                            </ul>
+                                        </div>
+                                        <div class="case-detail-list">
+                                            <img src="./assets/images/ic-server.svg" class="case-detail-icon">
+                                            <ul class="case-detail-info" data-con="column">
+                                                <li class="case-detail-info-item"><span>設備種類：</span>伺服器</li>
+                                                <li class="case-detail-info-item"><span>設備品牌：</span>Lenovo</li>
+                                                <li class="case-detail-info-item"><span>設備序號：</span>e91b575452</li>
+                                                <li class="case-detail-info-item"><span>設備位置：</span>第一機房 / E04櫃 /
+                                                    37U-38U</li>
+                                                <li class="case-detail-info-item flex-column flex-sm-row"><span
+                                                        class="mb-2 mb-sm-0">狀況說明：</span>今天早上電腦要開機的時候
+                                                    開機鈕按下去完全沒有反應(有按跟沒按一樣)，可是檢查後面的POWER 有在轉動；拆開主機側板，除 CPU 以外
+                                                    我都拆下來重新在裝上去，至於 CPU
+                                                    為什麼沒拆，是因為它上面不是風扇，是好幾片散熱版疊大約七公分高，就像冷氣機裡面的壓縮機那樣好幾片鐵片疊起來的。
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="case-detail-list">
+                                            <img src="./assets/images/ic-attatch.svg" class="case-detail-icon">
+                                            <ul class="case-detail-info pb-2" data-con="column">
+                                                <li class="case-detail-info-item flex-column flex-sm-row">
+                                                    <span class="mb-2 mb-sm-0">檢視附件：</span>
+                                                    <div class="case-detail-link">
+                                                        <a href="#" class="case-detail-link-item">20221220-info.doc</a>
+                                                        <a href="#" class="case-detail-link-item">流程執行記錄.xlsx</a>
+                                                        <a href="#" class="case-detail-link-item">EIP修改密碼.pdf</a>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="case-detail-list">
+                                            <img src="./assets/images/ic-ps.svg" class="case-detail-icon">
+                                            <ul class="case-detail-info" data-con="column">
+                                                <li class="case-detail-info-item flex-column flex-sm-row">
+                                                    <span class="mb-2 mb-sm-0">備註說明：</span>
+                                                    <p>主機板上有兩個 CPU，不像一般電腦只有一個 CPU 去虛擬成雙核心或四核心的。</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button js-accordion-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sign">
+                                簽核與加簽
+                            </button>
+                        </h2>
+                        <div id="sign" class="accordion-collapse collapse show">
+                            <div class="accordion-body px-0 pt-2 pb-4">
+                                <div class="d-flex mb-3 align-items-end flex-wrap">
+                                    <div style="width:calc(100% - 96px);" class="support-form-wrapper me-sm-3">
+                                        <div class="row gx-3">
+                                            <div class="col-12"><label class="form-label">新增加簽人員</label></div>
+                                            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
+                                                <select class="form-select">
+                                                    <option selected>請選擇部門</option>
+                                                    <option value="系統課">系統課</option>
+                                                    <option value="管理處">管理處</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
+                                                <select class="form-select">
+                                                    <option selected>請選擇職稱</option>
+                                                    <option value="工程師">工程師</option>
+                                                    <option value="系統工程師">系統工程師</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 mb-2 mb-sm-0">
+                                                <select class="form-select js-support-info">
+                                                    <option value="請選擇加簽人員">請選擇加簽人員</option>
+                                                    <option value="王大明">王大明</option>
+                                                    <option value="李小花">李小花</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button style="width:80px" type="submit" class="btn btn-dark-gray ms-auto"
+                                        data-bs-toggle="collapse" data-bs-target="#result">
+                                        新增
+                                    </button>
+                                </div>
+                                <div class="sign-add">
+                                    <h3 class="sign-add-title primary-color">已加簽人員：</h3>
+                                    <ul class="sign-add-list">
+                                        <li class="sign-add-list-item">
+                                            1006019S - 柳志偉<button class="btn sign-add-btn"><img
+                                                    src="./assets/images/ic-trash.svg" class="me-1">刪除</button>
+                                        </li>
+                                        <li class="sign-add-list-item">
+                                            1006088S - 王大明<button class="btn sign-add-btn"><img
+                                                    src="./assets/images/ic-trash.svg" class="me-1">刪除</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="opinion" class="form-label"><span class="danger-dark-color">*</span> 意見與說明</label>
+                                <textarea type="text" class="form-control" id="opinion" rows="3" placeholder="請輸入意見與說明"></textarea>
+                            </div>
+                            <label for="formFile" class="form-label">上傳附件</label>
+                            <div class="input-group mb-1">
+                                <input type="file" class="form-control" id="formFile" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <button class="btn btn-dark-primary-light-color" type="button" id="inputGroupFileAddon04">上傳檔案</button>
+                            </div>
+                            <p class="danger-dark-color">已上傳 3 個附件</p>
+                            <ul class="font-xs mb-3 primary-light-color">
+                                <li>1.20221220-info.doc</li>
+                                <li>2.流程執行記錄.xlsx</li>
+                                <li>3.EIP修改密碼.pdf</li>
+                            </ul>
+                            <div class="row justify-content-center gx-3 mb-5">
+                                <div class="col-6 col-xl-5 col-xxl-4">
+                                    <button class="btn btn-dark-gray w-100" data-bs-toggle="modal" data-bs-target="#message">退件</button>
+                                </div>
+                                <div class="col-6 col-xl-5 col-xxl-4">
+                                    <button class="btn btn-dark-danger-color w-100" data-bs-toggle="modal" data-bs-target="#message">確認簽核</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button js-accordion-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#history">
+                                處理歷程
+                            </button>
+                        </h2>
+                        <div id="history" class="accordion-collapse collapse show">
+                            <div class="accordion-body px-0 pt-2 pb-4">
+                                <div class="history">
+                                    <div class="history-item">
+                                        <div class="history-item-title">
+                                            <h3>智慧應用協銷處</h3>
+                                            <p>專責負責人(PM)</p>
+                                        </div>
+                                        <div class="history-item-content">
+                                            <ul class="history-info mb-2">
+                                                <li class="history-info-item"><span>收件時間</span>2023/10/23 上午 10:08:53</li>
+                                                <li class="history-info-item"><span>簽核時間</span>2023/10/23 上午 11:24:33</li>
+                                                <li class="history-info-item"><span>簽核人員</span>
+                                                    <button class="history-info-btn btn">1006019S - 柳志偉 <img src="./assets/images/ic-open-link.svg" class="ms-1"></button>
+                                                </li>
+                                                <li class="history-info-item"><span>花費時間</span>1時15分</li>
+                                            </ul>
+                                            <div class="history-item-message"><img src="./assets/images/ic-conversation.svg"> Ok</div>
+                                        </div>
+                                    </div>
+                                    <div class="history-item">
+                                        <div class="history-item-title">
+                                            <h3>採購處A</h3>
+                                            <p>委外廠商審核</p>
+                                        </div>
+                                        <div class="history-item-content">
+                                            <ul class="history-info mb-2">
+                                                <li class="history-info-item"><span>收件時間</span>2023/10/23 上午 10:08:53</li>
+                                                <li class="history-info-item"><span>簽核時間</span>2023/10/23 上午 11:24:33</li>
+                                                <li class="history-info-item"><span>簽核人員</span>
+                                                    <button class="history-info-btn btn">0694373 - 張尤瓊 <img src="./assets/images/ic-open-link.svg"
+                                                            class="ms-1"></button>
+                                                </li>
+                                                <li class="history-info-item"><span>花費時間</span>4時2分</li>
+                                            </ul>
+                                            <div class="history-item-message">
+                                                <img src="./assets/images/ic-conversation.svg">
+                                                預估轉委外及商品成本，新增廠商-邁達特數位($xx,xxx)查財政部稅務網及經濟部商業司基本資料有效，履約能力由委外小組審核，正式下單由採購議價格及付款條件。
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="history-item">
+                                        <div class="history-item-title">
+                                            <h3>專案管理處</h3>
+                                            <p>PMO</p>
+                                        </div>
+                                        <div class="history-item-content">
+                                            <ul class="history-info mb-2">
+                                                <li class="history-info-item"><span>收件時間</span>2023/10/23 上午 10:08:53</li>
+                                                <li class="history-info-item"><span>簽核時間</span>2023/10/23 上午 11:24:33</li>
+                                                <li class="history-info-item"><span>簽核人員</span>
+                                                    <button class="history-info-btn btn">0800071 - 李子鵬 <img src="./assets/images/ic-open-link.svg"
+                                                            class="ms-1"></button>
+                                                </li>
+                                                <li class="history-info-item"><span>花費時間</span>3時2分</li>
+                                            </ul>
+                                            <div class="history-item-message">
+                                                <img src="./assets/images/ic-conversation.svg">
+                                                VMware vRealize Operations 教練訓練,B100 目前沒有專業講師,建議無法委內處理.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="history-item">
+                                        <div class="history-item-title">
+                                            <h3>台北業務處</h3>
+                                            <p>加簽</p>
+                                        </div>
+                                        <div class="history-item-content">
+                                            <ul class="history-info mb-2">
+                                                <li class="history-info-item"><span>收件時間</span>2023/10/23 上午 10:08:53</li>
+                                                <li class="history-info-item"><span>簽核時間</span>2023/10/23 上午 11:24:33</li>
+                                                <li class="history-info-item"><span>簽核人員</span>
+                                                    <button class="history-info-btn btn">0694206 - 周惠卿 <img src="./assets/images/ic-open-link.svg"
+                                                            class="ms-1"></button>
+                                                </li>
+                                                <li class="history-info-item"><span>花費時間</span>3分</li>
+                                            </ul>
+                                            <div class="history-item-message">
+                                                <img src="./assets/images/ic-conversation.svg">
+                                                Ok
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="history-item" data-step="now">
+                                        <div class="history-item-title">
+                                            <h3>台北業務處</h3>
+                                            <p>加簽</p>
+                                        </div>
+                                        <div class="history-item-content">
+                                            <ul class="history-info mb-2">
+                                                <li class="history-info-item"><span>收件時間</span>2023/10/23 上午 10:08:53</li>
+                                                <li class="history-info-item"><span>簽核時間</span>尚未簽核</li>
+                                                <li class="history-info-item"><span>簽核人員</span>
+                                                    <button class="history-info-btn btn">1200151 - 林富雄 <img src="./assets/images/ic-open-link.svg"
+                                                            class="ms-1"></button>
+                                                </li>
+                                                <li class="history-info-item"><span>等待時間</span>4時45分</li>
+                                            </ul>
+                                            <div class="history-item-message">
+                                                <img src="./assets/images/ic-alert.svg">
+                                                待簽核
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <a href="index.html" class="content-bottom-btn">
+        <img src="./assets/images/ic-back.svg" alt="回首頁" class="me-1">
+        回首頁
+    </a>
+</div>
+		</div>
+		<footer class="white bg-gray-light text-center py-3">
+			<a href="#" class="gotop"><img src="./assets/images/ic-gotop.svg" alt="gotop"></a>
+			Copyright © 2022 中華民國交通部中央氣象署. All rights reserved.
+		</footer>
+		<!-- SCRIPTS -->
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.js"></script>
+		<script src="assets/js/moment-with-locales.min.js"></script>
+		<script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
+		<script src="assets/js/footable.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$('.table').footable({
+					"paging": {
+						"enabled": true,
+						"size": 10,
+					}
+				});
+				$('#date-start').datetimepicker({
+					format: 'L',
+					locale: 'zh-tw',
+					defaultDate: new Date(),
+				});
+				$('#date-end').datetimepicker({
+					format: 'L',
+					locale: 'zh-tw',
+					defaultDate: new Date(),
+				});
+			});
+		</script>
+	</div>
+</body>
+
+</html>
