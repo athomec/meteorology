@@ -10963,7 +10963,9 @@ input::placeholder, textarea::placeholder {
               -ms-flex: 0 0 81px;
                   flex: 0 0 81px; }
         .modal-header[data-txt="less"] .modal-title {
-          width: auto; } }
+          width: auto; }
+          .modal-header[data-txt="less"] .modal-title a {
+            color: #fff; } }
   .modal-header .btn-close {
     background: url("../images/ic-cross.svg") center;
     background-size: 24px;
@@ -16804,6 +16806,8 @@ footer {
     @media (max-width: 768px) {
       .case-detail-header img {
         width: 12px; } }
+  .case-detail-header a {
+    color: #fff; }
 
 .case-detail-body {
   border-radius: 0 0 5px 5px;
@@ -17054,6 +17058,9 @@ footer {
           flex-shrink: 0;
       margin-right: 16px;
       margin-top: 2px; }
+      @media (max-width: 991px) {
+        .history-item-message img {
+          margin-top: 0; } }
   .history-item-content {
     width: 100%; }
   .history-item[data-step="now"] .history-item-title {
