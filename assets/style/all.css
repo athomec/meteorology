@@ -17607,6 +17607,9 @@ footer {
         width: 100% !important;
         margin-left: 0;
         margin-right: -13px; } }
+    @media (max-width: 768px) {
+      .map-container[data-style="single"] .map-container-item:after {
+        height: 40px; } }
     .map-container[data-style="single"] .map-container-item:first-child, .map-container[data-style="single"] .map-container-item:nth-child(2) {
       margin-top: 35px;
       min-width: auto;
@@ -17951,6 +17954,9 @@ footer {
   background: #fff;
   padding: 0 0 32px 32px;
   min-height: 192px; }
+  @media (max-width: 768px) {
+    .map-list {
+      min-height: auto; } }
   .map-list-item {
     margin-bottom: 8px;
     vertical-align: middle; }
