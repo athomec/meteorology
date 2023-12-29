@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
+  <g id="ic-files" transform="translate(-759 -480)">
+    <circle id="Ellipse_97" data-name="Ellipse 97" cx="31" cy="31" r="31" transform="translate(759 480)" fill="#fff"/>
+    <g id="shared-folder" transform="translate(769.159 492.807)">
+      <g id="Group_1363" data-name="Group 1363" transform="translate(1.841 2.193)">
+        <g id="Group_1358" data-name="Group 1358">
+          <g id="Group_1357" data-name="Group 1357">
+            <path id="Path_4913" data-name="Path 4913" d="M1.841,32.366V4.353A2.16,2.16,0,0,1,4,2.193H17.158a2.158,2.158,0,0,1,1.589.7l3.461,3.767H36.746a2.16,2.16,0,0,1,2.159,2.16V32.366a2.16,2.16,0,0,1-2.159,2.16H4a2.16,2.16,0,0,1-2.159-2.16Z" transform="translate(-1.841 -2.193)" fill="#e68e2e"/>
+          </g>
+        </g>
+        <g id="Group_1360" data-name="Group 1360" transform="translate(6.914 6.739)">
+          <g id="Group_1359" data-name="Group 1359">
+            <path id="Path_4914" data-name="Path 4914" d="M40.207,14.666V27.594H12.7V14.666a1.95,1.95,0,0,1,1.95-1.95H38.257a1.95,1.95,0,0,1,1.95,1.95Z" transform="translate(-12.7 -12.716)" fill="#e9edf4"/>
+          </g>
+        </g>
+        <g id="Group_1362" data-name="Group 1362" transform="translate(0.381 10.689)">
+          <g id="Group_1361" data-name="Group 1361">
+            <path id="Path_4915" data-name="Path 4915" d="M43.4,20.545,39.806,38.535a2.6,2.6,0,0,1-2.542,2.093H4.159a1.735,1.735,0,0,1-1.694-2.079l3.7-18.517a1.3,1.3,0,0,1,1.271-1.047H42.127A1.3,1.3,0,0,1,43.4,20.545Z" transform="translate(-2.431 -18.985)" fill="#f7b369"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

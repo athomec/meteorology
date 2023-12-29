@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<title>交通部中央氣象署-資訊作業平台</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="交通部中央氣象署,資訊作業平台,氣象署,統籌管理">
+	<meta name="description" content="交通部中央氣象署 資訊作業平台" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta property="og:site_name" content="image.png" />
+	<meta property="og:image" content="assets/images/fb-img.png" />
+	<!--FB分享設定-->
+
+	<link rel="icon" href="assets/images/favicon.png" type="image/ico" />
+	<!--iconfont設定-->
+	<link rel="stylesheet" href="assets/style/all.css">
+	<!--css設定-->
+</head>
+
+<body>
+	<!-- loading開始 -->
+	<div id="preloader">
+		<div id="status"><img src="./assets/images/loading.gif" /></div>
+	</div>
+
+	<!-- 登入視窗開始 -->
+	<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header bg-primary-color">
+					<h5 class="modal-title white mx-auto d-flex align-items-center">
+						<img src="./assets/images/ic-lock.svg" alt="登入"> 登入
+					</h5>
+				</div>
+				<div class="modal-body pb-0 px-4 px-md-5">
+					<div class="mb-3">
+						<label for="account" class="form-label">帳號</label>
+						<input type="text" class="form-control" id="account" placeholder="請輸入帳號">
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">密碼</label>
+						<input type="text" class="form-control" id="password" placeholder="請輸入密碼">
+						<span class="notice danger-dark-color d-flex mt-1">
+							<img src="./assets/images/ic-warning.svg" alt="錯誤" class="me-1"> 請輸入正確密碼
+						</span>
+					</div>
+					<div class="d-flex justify-content-between">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								記住帳號
+							</label>
+						</div>
+						<a href="account.html" class="link-primary-light-color d-flex align-items-center mb-3">
+							<img src="./assets/images/ic-help.svg" alt="忘記密碼" class="me-1"> 忘記密碼
+						</a>
+					</div>
+				</div>
+				<div class="modal-footer border-0 pt-2 justify-content-center">
+					<button type="button" class="btn btn-dark-gray px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-dark-danger-color px-4 px-sm-5 py-1"
+						data-bs-dismiss="modal">登入</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 登入視窗結束 -->
+	<div class="wrapper">
+		<header class="header">
+			<a href="index.html" class="header-logo"><img src="./assets/images/logo.svg" alt="交通部中央氣象局 logo"></a>
+			<h1 class="header-title"><img src="./assets/images/main-title.svg" alt="統籌管理-服務中心"></h1>
+			<img src="./assets/images/header-vision.svg" class="header-vision">
+			<div class="header-link">
+				<a href="index.html" class="header-link-item font-bold me-3 d-none d-sm-flex">
+					<img src="./assets/images/ic-home.svg" alt="回首頁" class="header-link-img me-1"> 首頁
+				</a>
+				<a href="https://athomec.github.io/meteorology-backstage/login.html" target="_blank"
+					class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-manage.svg" alt="網站導覽" class="header-link-img me-1"> 管理
+				</a>
+				<a href="sitemap.html" class="header-link-item d-flex font-bold me-3">
+					<img src="./assets/images/ic-sitemap.svg" alt="網站導覽" class="header-link-img me-1"> 導覽
+				</a>
+				<a href="#" class="header-link-item d-flex font-bold" data-bs-toggle="modal" data-bs-target="#login">
+					<img src="./assets/images/ic-member.svg" alt="登入" class="header-link-img me-1"> 登入
+				</a>
+			</div>
+		</header>
+		<nav class="navbar navbar-expand-lg py-lg-0">
+			<div class="container-fluid">
+				<button class="navbar-toggler collapsed px-1 px-sm-3" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<img src="./assets/images/ic-menu.svg" alt="選單">
+				</button>
+				<div class="navbar-collapse collapse justify-content-center" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="support.html" class="nav-link">
+								<p>線上報修</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="apply.html" class="nav-link">
+								<p>表單申請</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="account.html" class="nav-link">
+								<p>帳密開通</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="assets.html" class="nav-link">
+								<p>資產管理</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="hardware.html" class="nav-link">
+								<p>硬體健康</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="monitor.html" class="nav-link">
+								<p>效能監看</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="share.html" class="nav-link">
+								<p>共享資源</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="qa.html" class="nav-link">
+								<p>常見問題</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="feedback.html" class="nav-link">
+								<p>意見回饋</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="marquee bg-secondary-light-color" data-con="page">
+			<div class="container d-flex py-2">
+				<img src="./assets/images/ic-speaker.svg" alt="跑馬燈" class="me-2">
+				<marquee direction="right">
+					「中央氣象局天氣預報」每日有4次主要發布時間，分別在台灣時間清晨5時0分左右、上午11時0分左右、下午5時0分左右、及晚上11時0分左右。</marquee>
+			</div>
+		</div>
+
+		<div class="content">
+			
+<h2 class="title mb-5">
+    <div class="title-con"><img src="./assets/images/menu-ic7.svg" alt="共享資源icon"> 共享資源</div>
+</h2>
+
+<div class="container px-0 mb-4">
+    <ul class="nav nav-pills map-tabs" id="pills-tab" role="tablist">
+        <li role="presentation">
+            <button class="map-tabs-link btn-dark-secondary-light-color active me-4" data-bs-toggle="pill" data-bs-target="#system"
+                type="button" role="tab"><img src="./assets/images/ic-files.svg" class="me-3">系統</button>
+        </li>
+        <li role="presentation">
+            <button class="map-tabs-link btn-dark-danger-xlight-color" data-bs-toggle="pill" data-bs-target="#web"
+                type="button" role="tab" data-direc="right"><img src="./assets/images/ic-files.svg" class="me-3">網路</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="d-flex justify-content-center">
+            <div class="tab-pane fade show active" id="system" role="tabpanel" tabindex="0">
+                <div class="map-container justify-content-end mb-4">
+                    <div class="map-container-item">
+                        <div class="map-container-start"></div>
+                        <h3 class="map-title">新人入門<span class="ms-2">系統</span></h3>
+                        <ul class="map-list">
+                            <li class="map-list-item"><a href="#" class="map-links"><span
+                                        class="bg-assist-dark-color">A</span>計算機概論</a></li>
+                            <li class="map-list-item"><a href="#" class="map-links"><span class="bg-danger-color">B</span>Linux
+                                    系統建置</a></li>
+                            <li class="map-list-item"><a href="#" class="map-links"><span
+                                        class="bg-special-dark-color">C</span>Windows 建置</a></li>
+                            <li class="map-list-item"><a href="#" class="map-links"><span class="bg-tertiary-color">D</span>VMware
+                                    基礎操作</a></li>
+                            <li class="map-list-item"><a href="#" class="map-links"><span class="bg-bright-dark-color">E</span>常用
+                                    agent 佈署</a></li>
+                        </ul>
+                    </div>
+                    <div class="map-container-item">
+                        <h3 class="map-title">專業學習<span class="ms-2">系統</span></h3>
+                        <ul class="map-list">
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-assist-dark-color">A</span>操作 Shell 環境、Linux 管理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-danger-color">B</span>Linux 帳號、群組與檔案的管理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-special-dark-color">C</span>Linux 網路的設定與管理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-tertiary-color">D</span>Linux 的套件管理與升級</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-bright-dark-color">E</span>Ansible 自動化系統安裝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map-container-item">
+                        <h3 class="map-title">專家大師<span class="ms-2">系統</span></h3>
+                        <ul class="map-list">
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-assist-dark-color">A</span>SELinux 的觀念及管理、強化 Linux
+                                    安全</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-danger-color">B</span>Linux 進階問題處理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-special-dark-color">C</span>Wondows 進階問題處理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-tertiary-color">D</span>VMware 進階問題處理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-bright-dark-color">E</span>Ansible 問題處理</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="web" role="tabpanel" tabindex="0" data-direc="right">
+                <div class="map-container justify-content-end mb-4" data-direc="right">
+                    <div class="map-container-item">
+                        <div class="map-container-start"></div>
+                        <h3 class="map-title">新人入門<span class="ms-2">系統</span></h3>
+                        <ul class="map-list">
+                            <li class="map-list-item"><a href="#" class="map-links"><span
+                                        class="bg-assist-dark-color">A</span>計算機概論</a>
+                            </li>
+                            <li class="map-list-item"><a href="#" class="map-links"><span class="bg-danger-color">B</span>Linux
+                                    系統建置</a>
+                            </li>
+                            <li class="map-list-item"><a href="#" class="map-links"><span
+                                        class="bg-special-dark-color">C</span>Windows
+                                    建置</a></li>
+                            <li class="map-list-item"><a href="#" class="map-links"><span class="bg-tertiary-color">D</span>VMware
+                                    基礎操作</a></li>
+                            <li class="map-list-item"><a href="#" class="map-links"><span class="bg-bright-dark-color">E</span>常用
+                                    agent
+                                    佈署</a></li>
+                        </ul>
+                    </div>
+                    <div class="map-container-item">
+                        <h3 class="map-title">專業學習<span class="ms-2">系統</span></h3>
+                        <ul class="map-list">
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-assist-dark-color">A</span>操作 Shell 環境、Linux 管理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-danger-color">B</span>Linux 帳號、群組與檔案的管理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-special-dark-color">C</span>Linux 網路的設定與管理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-tertiary-color">D</span>Linux 的套件管理與升級</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-bright-dark-color">E</span>Ansible 自動化系統安裝</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map-container-item">
+                        <h3 class="map-title">專家大師<span class="ms-2">系統</span></h3>
+                        <ul class="map-list">
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-assist-dark-color">A</span>SELinux 的觀念及管理、強化 Linux
+                                    安全</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-danger-color">B</span>Linux 進階問題處理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-special-dark-color">C</span>Wondows 進階問題處理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-tertiary-color">D</span>VMware 進階問題處理</a>
+                            </li>
+                            <li class="map-list-item">
+                                <a href="#" class="map-links"><span class="bg-bright-dark-color">E</span>Ansible 問題處理</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <a href="share.html#share4" class="content-bottom-btn">
+        <img src="./assets/images/ic-back.svg" alt="回學習地圖列表" class="me-1">
+        回學習地圖列表
+    </a>
+</div>
+		</div>
+		<footer class="white bg-gray-light text-center py-3">
+			<a href="#" class="gotop"><img src="./assets/images/ic-gotop.svg" alt="gotop"></a>
+			Copyright © 2022 中華民國交通部中央氣象署. All rights reserved.
+		</footer>
+		<!-- SCRIPTS -->
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.js"></script>
+		<script src="assets/js/moment-with-locales.min.js"></script>
+		<script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
+		<script src="assets/js/footable.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$('.table').footable({
+					"paging": {
+						"enabled": true,
+						"size": 10,
+					}
+				});
+				$('#date-start').datetimepicker({
+					format: 'L',
+					locale: 'zh-tw',
+					defaultDate: new Date(),
+				});
+				$('#date-end').datetimepicker({
+					format: 'L',
+					locale: 'zh-tw',
+					defaultDate: new Date(),
+				});
+			});
+		</script>
+	</div>
+</body>
+
+</html>
