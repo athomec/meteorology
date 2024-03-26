@@ -14393,6 +14393,11 @@ textarea::placeholder {
   .card-list-stable .card-list-item:nth-child(odd) .card-list-link:hover {
     background: #BC8E79; }
 
+.card-list-secondary .card-list-item:nth-child(odd) .card-list-link {
+  background: #6FABE6; }
+  .card-list-secondary .card-list-item:nth-child(odd) .card-list-link:hover {
+    background: #599ee2; }
+
 .number-list {
   list-style-type: decimal;
   padding-left: 25px;
